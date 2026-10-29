@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Your Brand with WongEX — Free</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{color:#8A520A}a:hover{color:#5E3705}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+.disp{font-family:'Anton','Impact',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:0.01em;line-height:0.98;margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-gold{background:#E9A23B;color:#111111}.btn-gold:hover{background:#F2B65A;color:#111111}
+.btn-ghost-d{border-color:#4A4740;color:#FFFFFF}.btn-ghost-d:hover{border-color:#E9A23B;color:#FFFFFF}
+.btn-dark{background:#111111;color:#FFFFFF}.btn-dark:hover{background:#2A2825;color:#FFFFFF}
+.btn-ghost-l{border-color:#111111;color:#111111}.btn-ghost-l:hover{background:#111111;color:#FFFFFF}
+.navlink{color:#D9D3C7;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.1em}.navlink:hover{color:#E9A23B}
+.field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
+.field input,.field select{min-height:48px;border-radius:10px;border:1.5px solid #CFC6B6;background:#FFFFFF;padding:0 14px;font:inherit;font-weight:400;font-size:15px;color:#111111}
+.chk{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border:1.5px solid #DDD5C7;border-radius:10px;background:#FFFFFF;font-size:14px;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:#111111}
+.card-hover{transition:transform .2s ease}.card-hover:hover{transform:translateY(-3px)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="page">
+
+
+<div style="width: 100%; background: #F5F1EA; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
+
+<header style="background: #111111; border-bottom: 1px solid #2E2C28">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px">
+    <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+      <span style="width: 44px; height: 44px; border-radius: 10px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M2 20 L9 7 L13 13 L16 9 L22 20 Z"></path></svg></span>
+      <span style="display: flex; flex-direction: column; line-height: 1"><span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span><span style="font-size: 11px; letter-spacing: 0.18em; color: #B9B3A8; margin-top: 4px">WONGE SHERPA</span></span>
+    </a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center">
+      <a class="navlink" href="index.html">HOME</a>
+      <a class="navlink" href="about.html">ABOUT</a>
+      <a class="navlink" href="index.html">ECOSYSTEM</a>
+      <a class="navlink" href="free-training.html">LEARN</a>
+      <a class="navlink" href="stories.html">STORIES</a>
+      <a class="navlink" href="media.html">MEDIA</a>
+      <a class="navlink" href="impact.html">IMPACT</a>
+      <a class="navlink" href="connect.html">CONNECT</a>
+    </nav>
+    <a class="btn btn-gold" href="connect.html">Work with Wonge →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section style="background: #E9A23B; padding: 80px 0 72px">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 22px">
+      <p class="eyebrow" style="color: #3A2508">Build Your Brand with WongEX · /build-your-brand</p>
+      <h1 class="disp" style="font-size: clamp(56px, 8vw, 112px)">Your idea.<br>Your story.<br>Your business.<br><span style="background: #111111; color: #E9A23B; padding: 0 14px">Your brand.</span></h1>
+      <p style="margin: 0; font-size: 14px; font-weight: 800; letter-spacing: 0.3em">LEARN · BUILD · GROW · LEAD</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="btn btn-dark" href="#register">Join free →</a>
+        <button type="button" onClick="{{openVideo}}" class="btn btn-ghost-l">▶ Watch Wonge's introduction</button>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px; padding: 32px; border-radius: 24px; background: #111111; color: #FFFFFF">
+      <span class="disp" style="font-size: 44px; color: #E9A23B">100% free</span>
+      <span style="font-size: 15px; color: #D9D3C7">educational guidance</span>
+      <ul style="margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 700; letter-spacing: 0.06em">
+        <li style="display: flex; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>NO MEMBERSHIP FEE</li>
+        <li style="display: flex; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>NO MENTORING FEE</li>
+        <li style="display: flex; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>NO TRAINING FEE</li>
+        <li style="display: flex; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>NO REQUIREMENT TO JOIN UNICITY</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION VIDEO + WHY -->
+<section style="padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <p class="eyebrow" style="color: #8A520A">Mission video</p>
+      <button type="button" onClick="{{openVideo}}" aria-label="Play: Why I created Build Your Brand" style="position: relative; display: block; width: 100%; padding: 0; border: none; border-radius: 24px; overflow: hidden; background: #111111; cursor: pointer">
+        <img src="images/mission.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover">
+        <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center"><span style="width: 88px; height: 88px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span></span>
+        <span style="position: absolute; left: 20px; bottom: 18px; padding: 6px 12px; border-radius: 999px; background: #111111; color: #E9A23B; font-size: 11px; font-weight: 800; letter-spacing: 0.12em">WHY I CREATED BUILD YOUR BRAND · [3:00]</span>
+      </button>
+      <a class="btn btn-dark" href="#register" style="align-self: flex-start">Skip to free registration ↓</a>
+    </div>
+    <article style="display: flex; flex-direction: column; gap: 14px; padding: 40px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3DCD0; font-size: 16px; color: #3A3732">
+      <h2 class="disp" style="font-size: 40px; color: #111111">Why I created Build Your Brand with WongEX</h2>
+      <p style="margin: 0">Throughout my journey, I have invested time and money into education, training, mentors, business experience, networking, technology, social media, and learning from other people.</p>
+      <p style="margin: 0; font-weight: 700; color: #111111">I have learned from success. I have learned from failure. I have learned from mistakes. And I am still learning every day.</p>
+      <p style="margin: 0">I believe knowledge becomes more powerful when we share it. That is why I created BUILD YOUR BRAND with WongEX — to share useful lessons from my experience and continued learning with people around the world who want to build something of their own.</p>
+      <p style="margin: 0">You may have an idea but not know where to start. You may already own a business but struggle with branding or social media. You may have an excellent product or service but not know how to reach people. You may simply want to develop your professional identity.</p>
+      <p style="margin: 0">Where I have useful knowledge or experience, I want to share it. <strong style="color: #111111">Free.</strong> No expectation that you must purchase something from me. No requirement that you join my business.</p>
+      <p style="margin: 0">My purpose here is to share what I know, continue learning, and help other people take action.</p>
+      <p style="margin: 8px 0 0; font-weight: 800; color: #111111">— Wonge Sherpa <span style="font-weight: 500; color: #5A554D">· Founder, WongEX</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- WHAT YOU WILL LEARN -->
+<section style="background: #111111; color: #FFFFFF; padding: 88px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <p class="eyebrow" style="color: #E9A23B">What you will learn</p>
+        <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px); color: #FFFFFF">Practical skills for building</h2>
+      </div>
+      <a class="btn btn-gold" href="#register">Register free →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Build a personal brand</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Build a business brand</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Start a business</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Improve an existing business</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Learn social media</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Create better content</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Learn digital marketing</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Sales &amp; communication</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Build an online presence</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Learn leadership</div>
+      <div style="padding: 20px; border-radius: 14px; background: #1C1B19; border: 1px solid #2E2C28; font-weight: 600">Use technology &amp; AI effectively</div>
+      <div style="padding: 20px; border-radius: 14px; background: #E9A23B; color: #111111; font-weight: 700">Develop a global business mindset</div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRATION -->
+<section id="register" style="padding: 96px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">Free registration</p>
+      <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px)">Start building your brand</h2>
+      <p style="margin: 0; max-width: 640px; font-size: 17px; color: #3A3732">Join the global WongEX learning community and access free educational content and guidance.</p>
+    </div>
+    <ol aria-label="Registration steps" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+      <sc-for list="{{steps}}" as="st" hint-placeholder-count="3">
+        <li style="display: flex; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 14px; background: {{st.bg}}; color: {{st.fg}}"><span style="width: 32px; height: 32px; flex: none; border-radius: 999px; border: 2px solid currentColor; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px">{{st.n}}</span><span style="font-weight: 700; font-size: 14px">{{st.label}}</span></li>
+      </sc-for>
+    </ol>
+    <div style="padding: 44px; border-radius: 28px; background: #FFFFFF; border: 1px solid #E3DCD0">
+      <sc-if value="{{isStep1}}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{submit}}" style="display: flex; flex-direction: column; gap: 20px">
+          <p class="eyebrow" style="color: #8A520A">Step 1 — Tell us about you</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px">
+            <label class="field">Full name*<input type="text" required="required" autocomplete="name"></label>
+            <label class="field">Email address*<input type="email" required="required" autocomplete="email"></label>
+            <label class="field">Mobile / WhatsApp number*<input type="tel" required="required" autocomplete="tel"></label>
+            <label class="field">Country*<select required="required"><option value="">Select country</option><option>Canada</option><option>Nepal</option><option>United States</option><option>United Kingdom</option><option>Australia</option><option>India</option><option>United Arab Emirates</option><option>Other</option></select></label>
+          </div>
+          <fieldset style="margin: 0; padding: 0; border: none">
+            <legend style="font-size: 13px; font-weight: 600; margin-bottom: 8px">Do you currently have a business?</legend>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px">
+              <label class="chk"><input type="radio" name="biz" checked="{{isYes}}" onChange="{{setYes}}">Yes</label>
+              <label class="chk"><input type="radio" name="biz" checked="{{isNo}}" onChange="{{setNo}}">No</label>
+              <label class="chk"><input type="radio" name="biz" checked="{{isPlan}}" onChange="{{setPlan}}">Planning to start</label>
+            </div>
+          </fieldset>
+          <sc-if value="{{isYes}}" hint-placeholder-val="{{ false }}">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px">
+              <label class="field">Business / brand name<input type="text"></label>
+              <label class="field">What type of business do you operate?<input type="text"></label>
+            </div>
+          </sc-if>
+          <sc-if value="{{showBuild}}" hint-placeholder-val="{{ true }}">
+            <label class="field">What would you like to build?<input type="text"></label>
+          </sc-if>
+          <fieldset style="margin: 0; padding: 0; border: none">
+            <legend style="font-size: 13px; font-weight: 600; margin-bottom: 8px">Primary goal (choose any)</legend>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px">
+              <sc-for list="{{goals}}" as="g" hint-placeholder-count="10">
+                <label class="chk"><input type="checkbox">{{g}}</label>
+              </sc-for>
+            </div>
+          </fieldset>
+          <label class="field" style="max-width: 300px">Preferred language (optional)<select><option>English</option><option>Nepali</option><option>Hindi</option><option>Other</option></select></label>
+          <div style="padding: 16px 18px; border-radius: 12px; background: #F5F1EA; font-size: 13px; color: #5A554D; display: flex; flex-direction: column; gap: 10px">
+            <span><strong style="color: #111111">Privacy:</strong> We use these details only to send you Build Your Brand learning content and updates. You are added to the Build Your Brand community list only — not to any Unicity or other business list. Unsubscribe any time. <a href="connect.html">Privacy Policy</a></span>
+            <label style="display: flex; gap: 10px; align-items: flex-start; color: #3A3732"><input type="checkbox" required="required" style="width: 18px; height: 18px; margin-top: 2px; accent-color: #111111">I agree to receive free educational emails and messages from WongEX.</label>
+          </div>
+          <button type="submit" class="btn btn-dark" style="align-self: flex-start; min-height: 56px; padding: 0 32px">Join free →</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{isStep2}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <p class="eyebrow" style="color: #8A520A">Step 2 — Connect with WongEX</p>
+          <h3 class="disp" style="font-size: clamp(36px, 4vw, 52px)">Welcome to Build Your Brand with WongEX</h3>
+          <p style="margin: 0; font-size: 17px; color: #3A3732">Your learning journey starts here. Follow the official channels for new lessons — each opens the official account so you can follow voluntarily.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+            <a href="#instagram" class="card-hover" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; border: 1.5px solid #E3DCD0; text-decoration: none; color: #111111"><span style="font-weight: 800">Instagram</span><span style="font-size: 14px; color: #5A554D">Branding, business and short educational content.</span><span style="margin-top: 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #8A520A">FOLLOW ON INSTAGRAM →</span></a>
+            <a href="#tiktok" class="card-hover" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; border: 1.5px solid #E3DCD0; text-decoration: none; color: #111111"><span style="font-weight: 800">TikTok</span><span style="font-size: 14px; color: #5A554D">Practical short-form business and social-media lessons.</span><span style="margin-top: 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #8A520A">FOLLOW ON TIKTOK →</span></a>
+            <a href="#youtube" class="card-hover" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; border: 1.5px solid #E3DCD0; text-decoration: none; color: #111111"><span style="font-weight: 800">YouTube</span><span style="font-size: 14px; color: #5A554D">Longer training, explanations and business education.</span><span style="margin-top: 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #8A520A">SUBSCRIBE ON YOUTUBE →</span></a>
+            <a href="#facebook" class="card-hover" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; border: 1.5px solid #E3DCD0; text-decoration: none; color: #111111"><span style="font-weight: 800">Facebook</span><span style="font-size: 14px; color: #5A554D">Videos, community updates and educational content.</span><span style="margin-top: 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #8A520A">FOLLOW ON FACEBOOK →</span></a>
+            <a href="#x" class="card-hover" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; border: 1.5px solid #E3DCD0; text-decoration: none; color: #111111"><span style="font-weight: 800">X</span><span style="font-size: 14px; color: #5A554D">Ideas, business insights and WongEX updates.</span><span style="margin-top: 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #8A520A">FOLLOW ON X →</span></a>
+            <a href="#linkedin" class="card-hover" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; border: 1.5px solid #E3DCD0; text-decoration: none; color: #111111"><span style="font-weight: 800">LinkedIn</span><span style="font-size: 14px; color: #5A554D">Entrepreneurship, leadership and professional content.</span><span style="margin-top: 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #8A520A">FOLLOW ON LINKEDIN →</span></a>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px">
+            <button type="button" onClick="{{toStep3}}" class="btn btn-dark">Continue to the free hub →</button>
+            <button type="button" onClick="{{reset}}" class="btn btn-ghost-l">Register someone else</button>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{isStep3}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <p class="eyebrow" style="color: #8A520A">Step 3 — Start learning</p>
+          <h3 class="disp" style="font-size: clamp(36px, 4vw, 52px)">Your first free lessons</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+            <a href="free-training.html" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #111111"><img src="images/lesson-brand.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; display: block"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">START YOUR BRAND</span><span class="disp" style="font-size: 22px">Choose your identity &amp; message</span></a>
+            <a href="free-training.html" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #111111"><img src="images/lesson-social.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; display: block"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">SOCIAL MEDIA</span><span class="disp" style="font-size: 22px">Your first 30 days of content</span></a>
+            <a href="free-training.html" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #111111"><img src="images/lesson-sales.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; display: block"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">SALES &amp; MARKETING</span><span class="disp" style="font-size: 22px">Talking to your first customers</span></a>
+          </div>
+          <a class="btn btn-gold" href="free-training.html" style="align-self: flex-start">Open the Free Learning Hub →</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section style="background: #EDE6DA; padding: 88px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">Your journey</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px)">From first lesson to future success story</h2>
+    </div>
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px">
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">01</span><span style="font-weight: 700">Watch Wonge's introduction</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">02</span><span style="font-weight: 700">Understand the free mission</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">03</span><span style="font-weight: 700">Register</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">04</span><span style="font-weight: 700">Connect with official channels</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">05</span><span style="font-weight: 700">Access free training</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">06</span><span style="font-weight: 700">Learn · Take action</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #8A520A">07</span><span style="font-weight: 700">Build · Grow</span></li>
+      <li style="padding: 18px; border-radius: 14px; background: #111111; color: #FFFFFF"><span style="display: block; font-size: 12px; font-weight: 800; color: #E9A23B">08</span><span style="font-weight: 700">Share progress</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <p class="eyebrow" style="color: #8A520A">Questions</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px)">Is it really free?</h2>
+      <p style="margin: 0; color: #5A554D">Access free educational guidance, resources and practical lessons designed to help you develop your brand and business skills. Individual results depend on your actions, experience, market, business and resources.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{faqs}}" as="f" hint-placeholder-count="5">
+        <div style="border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0">
+          <button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.expanded}}" style="width: 100%; min-height: 60px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; font: inherit; font-weight: 700; font-size: 16px; text-align: left; color: #111111; cursor: pointer">{{f.q}}<span aria-hidden="true" style="font-size: 22px; color: #8A520A">{{f.icon}}</span></button>
+          <sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; padding: 0 20px 18px; color: #5A554D">{{f.a}}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<footer style="background: #111111; color: #B9B3A8; padding: 40px 0">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; font-size: 13px">
+    <span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span>
+    <span>Knowledge shared. People empowered. Brands built.</span>
+    <span>© 2026 WongEX · <a href="connect.html" style="color: #B9B3A8">Privacy</a> · <a href="connect.html" style="color: #B9B3A8">Terms</a></span>
+  </div>
+</footer>
+
+<sc-if value="{{videoOpen}}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="Video player" style="position: fixed; inset: 0; z-index: 50; background: rgba(17, 17, 17, 0.9); display: flex; align-items: center; justify-content: center; padding: 24px">
+    <div style="width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+        <span class="disp" style="font-size: 30px; color: #FFFFFF">Why I created Build Your Brand</span>
+        <button type="button" onClick="{{closeVideo}}" aria-label="Close video" style="width: 48px; height: 48px; flex: none; border-radius: 999px; border: 1.5px solid #4A4740; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
+      <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #000000">
+        <img src="images/mission.svg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0.4">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center; color: #FFFFFF">
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">VIDEO SLOT</span>
+          <span style="max-width: 520px; font-size: 18px; font-weight: 600">Connect the MP4 file or YouTube / Vimeo link for Wonge's mission video here.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</template>
+<script>
+/* WongEX page runtime: renders the template, handles state & events (no dependencies) */
+(function(){
+  class DCLogic { constructor(props){ this.props = props || {}; this.state = {}; }
+    setState(p){ Object.assign(this.state, typeof p === 'function' ? p(this.state) : p); if (this._render) this._render(); }
+    forceUpdate(){ if (this._render) this._render(); } }
+  window.DCLogic = DCLogic;
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g, WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+  function look(path, scope){
+    if (path === 'true') return true; if (path === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+    var parts = path.split('.'), v = scope;
+    for (var i = 0; i < parts.length; i++){ if (v == null) return undefined; v = v[parts[i]]; }
+    return v;
+  }
+  var EV = { onclick: 'click', onsubmit: 'submit', onchange: 'change', oninput: 'input' };
+  function renderNodes(node, scope, ns){
+    if (node.nodeType === 3){
+      var t = node.nodeValue;
+      if (t.indexOf('{{') < 0) return [document.createTextNode(t)];
+      return [document.createTextNode(t.replace(HOLE, function(_, p){ var v = look(p, scope); return v == null ? '' : String(v); }))];
+    }
+    if (node.nodeType !== 1) return [];
+    var tag = node.nodeName.toLowerCase();
+    if (tag === 'sc-if'){
+      var m = WHOLE.exec(node.getAttribute('value') || '');
+      if (!(m && look(m[1], scope))) return [];
+      return kids(node, scope, ns);
+    }
+    if (tag === 'sc-for'){
+      var lm = WHOLE.exec(node.getAttribute('list') || ''); var list = lm ? look(lm[1], scope) : [];
+      var as = node.getAttribute('as') || 'item', out = [];
+      (list || []).forEach(function(it, i){ var s = Object.create(scope); s[as] = it; s.$index = i; out.push.apply(out, kids(node, s, ns)); });
+      return out;
+    }
+    var SVG = 'http://www.w3.org/2000/svg'; if (tag === 'svg') ns = SVG;
+    var el = ns ? document.createElementNS(ns, node.nodeName) : document.createElement(tag); el._dcH = {};
+    for (var a = 0; a < node.attributes.length; a++){
+      var at = node.attributes[a], name = at.name, val = at.value, lname = name.toLowerCase();
+      if (lname.indexOf('hint-') === 0) continue;
+      var w = WHOLE.exec(val);
+      if (EV[lname]){ if (w){ var fn = look(w[1], scope); if (typeof fn === 'function') el._dcH[EV[lname]] = fn; } continue; }
+      if (w){
+        var v = look(w[1], scope);
+        if (lname === 'checked'){ el._dcChecked = !!v; if (v) el.setAttribute('checked', ''); continue; }
+        if (v === false || v == null) continue;
+        el.setAttribute(name, v === true ? '' : String(v)); continue;
+      }
+      if (val.indexOf('{{') >= 0) val = val.replace(HOLE, function(_, p){ var x = look(p, scope); return x == null ? '' : String(x); });
+      el.setAttribute(name, val);
+    }
+    kids(node, scope, ns).forEach(function(c){ el.appendChild(c); });
+    return [el];
+  }
+  function kids(node, scope, ns){ var out = []; var src = node.content || node; for (var c = src.firstChild; c; c = c.nextSibling) out.push.apply(out, renderNodes(c, scope, ns)); return out; }
+  function morph(from, to){
+    if (from.nodeType !== to.nodeType || from.nodeName !== to.nodeName){ from.parentNode.replaceChild(to, from); return; }
+    if (from.nodeType === 3){ if (from.nodeValue !== to.nodeValue) from.nodeValue = to.nodeValue; return; }
+    var i;
+    for (i = from.attributes.length - 1; i >= 0; i--){ var n = from.attributes[i].name; if (!to.hasAttribute(n)) from.removeAttribute(n); }
+    for (i = 0; i < to.attributes.length; i++){ var at = to.attributes[i]; if (from.getAttribute(at.name) !== at.value) from.setAttribute(at.name, at.value); }
+    from._dcH = to._dcH;
+    if (to._dcChecked !== undefined){ from.checked = to._dcChecked; }
+    patchChildren(from, Array.prototype.slice.call(to.childNodes));
+  }
+  function patchChildren(parent, next){
+    var cur = Array.prototype.slice.call(parent.childNodes), i;
+    for (i = 0; i < next.length; i++){ if (i < cur.length) morph(cur[i], next[i]); else parent.appendChild(next[i]); }
+    for (i = next.length; i < cur.length; i++) parent.removeChild(cur[i]);
+  }
+  window.mountDC = function(root, tpl, Component){
+    var comp = new Component({});
+    comp._render = function(){ var vals = comp.renderVals ? comp.renderVals() : {}; patchChildren(root, kids(tpl, vals)); };
+    ['click', 'submit', 'change', 'input'].forEach(function(type){
+      root.addEventListener(type, function(e){
+        for (var el = e.target; el && el !== root.parentNode; el = el.parentNode){ if (el._dcH && el._dcH[type]){ el._dcH[type](e); break; } }
+      });
+    });
+    comp._render();
+    if (comp.componentDidMount) comp.componentDidMount();
+  };
+})();
+
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { step: 1, biz: 'no', faq: 0, video: false }; }
+  renderVals() {
+    const s = this.state;
+    const labels = ['Tell us about you', 'Connect with WongEX', 'Start learning'];
+    const steps = labels.map((l, k) => {
+      const n = k + 1; const on = n === s.step; const done = n < s.step;
+      return { n: done ? '✓' : String(n), label: l, bg: on ? '#111111' : (done ? '#E9A23B' : '#FFFFFF'), fg: on ? '#FFFFFF' : '#111111' };
+    });
+    const faqData = [
+      { q: 'Is Build Your Brand really free?', a: 'Yes. There is no membership fee, no mentoring fee and no training fee for the Build Your Brand educational guidance.' },
+      { q: 'Do I have to join Unicity or buy anything?', a: 'No. The free education does not require you to join Unicity, purchase a product, or enter any other WongEX business.' },
+      { q: 'What will I receive after registering?', a: 'Access to the WongEX Free Learning Hub, new lessons as they are published, and links to follow the official WongEX channels.' },
+      { q: 'Will my business grow if I join?', a: 'We share free educational guidance, resources and practical lessons. Results depend on your actions, experience, market, business and resources — no outcome is guaranteed.' },
+      { q: 'How is my information used?', a: 'Only to send you Build Your Brand learning content. You are not added to unrelated marketing lists, and you can unsubscribe at any time.' }
+    ];
+    const faqs = faqData.map((f, k) => ({ ...f, open: s.faq === k, expanded: s.faq === k ? 'true' : 'false', icon: s.faq === k ? '−' : '+', toggle: () => this.setState({ faq: s.faq === k ? -1 : k }) }));
+    return {
+      steps, faqs,
+      goals: ['Build my personal brand', 'Start a business', 'Grow my existing business', 'Learn social media', 'Learn content creation', 'Learn sales and marketing', 'Improve my online presence', 'Reach customers internationally', 'Develop leadership skills', 'Not sure yet — I need guidance'],
+      isStep1: s.step === 1, isStep2: s.step === 2, isStep3: s.step === 3,
+      isYes: s.biz === 'yes', isNo: s.biz === 'no', isPlan: s.biz === 'plan', showBuild: s.biz !== 'yes',
+      setYes: () => this.setState({ biz: 'yes' }), setNo: () => this.setState({ biz: 'no' }), setPlan: () => this.setState({ biz: 'plan' }),
+      submit: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ step: 2 }); },
+      toStep3: () => this.setState({ step: 3 }),
+      reset: () => this.setState({ step: 1 }),
+      videoOpen: s.video,
+      openVideo: () => this.setState({ video: true }),
+      closeVideo: () => this.setState({ video: false })
+    };
+  }
+}
+mountDC(document.getElementById('app'), document.getElementById('page'), Component);
+</script>
+</body>
+</html>

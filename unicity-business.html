@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unicity Business with Wonge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{color:#E9A23B}a:hover{color:#F2C477}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+.disp{font-family:'Anton','Impact',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:0.01em;line-height:0.98;margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-gold{background:#E9A23B;color:#111111}.btn-gold:hover{background:#F2B65A;color:#111111}
+.btn-ghost-d{border-color:#4A4740;color:#FFFFFF}.btn-ghost-d:hover{border-color:#E9A23B;color:#FFFFFF}
+.navlink{color:#D9D3C7;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.1em}.navlink:hover{color:#E9A23B}
+.field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#D9D3C7}
+.field input,.field select{min-height:48px;border-radius:10px;border:1.5px solid #3A3833;background:#1C1B19;padding:0 14px;font:inherit;font-weight:400;font-size:15px;color:#FFFFFF}
+.card-hover{transition:transform .2s ease}.card-hover:hover{transform:translateY(-3px)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="page">
+
+
+<div style="width: 100%; background: #111111; color: #FFFFFF; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
+
+<header style="background: #111111; border-bottom: 1px solid #2E2C28">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px">
+    <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+      <span style="width: 44px; height: 44px; border-radius: 10px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M2 20 L9 7 L13 13 L16 9 L22 20 Z"></path></svg></span>
+      <span style="display: flex; flex-direction: column; line-height: 1"><span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span><span style="font-size: 11px; letter-spacing: 0.18em; color: #B9B3A8; margin-top: 4px">WONGE SHERPA</span></span>
+    </a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center">
+      <a class="navlink" href="index.html">HOME</a>
+      <a class="navlink" href="about.html">ABOUT</a>
+      <a class="navlink" href="index.html" style="color: #E9A23B">ECOSYSTEM</a>
+      <a class="navlink" href="free-training.html">LEARN</a>
+      <a class="navlink" href="stories.html">STORIES</a>
+      <a class="navlink" href="media.html">MEDIA</a>
+      <a class="navlink" href="impact.html">IMPACT</a>
+      <a class="navlink" href="connect.html">CONNECT</a>
+    </nav>
+    <a class="btn btn-gold" href="#interest">I want to learn more →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section style="padding: 80px 0 96px">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 22px">
+      <p class="eyebrow" style="color: #E9A23B">Pathway 01 · /unicity-business</p>
+      <h1 class="disp" style="font-size: clamp(56px, 8vw, 112px); color: #FFFFFF">Build a global business <span style="color: #E9A23B">with Wonge</span></h1>
+      <p style="margin: 0; font-size: 19px; color: #D9D3C7; max-width: 560px">Learn about Wonge's Unicity journey, how the business works, the wellness ecosystem, and the training, team and leadership support behind it.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="btn btn-gold" href="#interest">I want to learn more →</a>
+        <a class="btn btn-ghost-d" href="#whatsapp">Talk to Wonge on WhatsApp</a>
+      </div>
+    </div>
+    <button type="button" onClick="{{openVideo}}" aria-label="Play: my Unicity journey" style="position: relative; display: block; width: 100%; padding: 0; border: none; border-radius: 24px; overflow: hidden; background: #1C1B19; cursor: pointer">
+      <img src="images/eco-unicity.svg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover">
+      <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center"><span style="width: 88px; height: 88px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span></span>
+      <span style="position: absolute; left: 20px; bottom: 18px; padding: 6px 12px; border-radius: 999px; background: #111111; color: #E9A23B; font-size: 11px; font-weight: 800; letter-spacing: 0.12em">MY UNICITY JOURNEY · [4:00]</span>
+    </button>
+  </div>
+</section>
+
+<!-- NOTICE -->
+<div style="background: #1C1B19; border-top: 1px solid #2E2C28; border-bottom: 1px solid #2E2C28">
+  <p class="wrap" style="margin: 0 auto; padding-top: 18px; padding-bottom: 18px; font-size: 14px; color: #D9D3C7; text-align: center">This page is about Wonge's independent Unicity business. Looking for free branding and business education instead? <a href="build-your-brand.html">Build Your Brand is separate and 100% free →</a></p>
+</div>
+
+<!-- TABS: overview -->
+<section style="padding: 96px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <p class="eyebrow" style="color: #E9A23B">Explore the business</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px); color: #FFFFFF">Everything in one place</h2>
+    </div>
+    <div role="tablist" aria-label="Unicity business topics" style="display: flex; flex-wrap: wrap; gap: 8px">
+      <sc-for list="{{tabs}}" as="t" hint-placeholder-count="5">
+        <button type="button" role="tab" onClick="{{t.pick}}" aria-selected="{{t.selected}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1.5px solid {{t.border}}; background: {{t.bg}}; color: {{t.fg}}; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">{{t.label}}</button>
+      </sc-for>
+    </div>
+    <div role="tabpanel" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center; padding: 40px; border-radius: 24px; background: #1C1B19; border: 1px solid #2E2C28">
+      <img src="{{tab.img}}" alt="" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 16px; display: block">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <span class="disp" style="font-size: 40px; color: #FFFFFF">{{tab.title}}</span>
+        <p style="margin: 0; font-size: 16px; color: #D9D3C7">{{tab.body}}</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+          <sc-for list="{{tab.points}}" as="p" hint-placeholder-count="3">
+            <li style="display: flex; gap: 12px; color: #FFFFFF"><span style="color: #E9A23B">—</span>{{p}}</li>
+          </sc-for>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT GRID -->
+<section style="background: #F5F1EA; color: #111111; padding: 96px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">You won't build alone</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px)">Training, team &amp; leadership</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0"><span class="disp" style="font-size: 26px">Onboarding</span><span style="font-size: 15px; color: #5A554D">[Describe the first-week getting-started process for new partners.]</span></div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0"><span class="disp" style="font-size: 26px">Weekly training</span><span style="font-size: 15px; color: #5A554D">[Training calls, product knowledge, communication and social-media skills.]</span></div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0"><span class="disp" style="font-size: 26px">Team culture</span><span style="font-size: 15px; color: #5A554D">[How the team supports, recognises and learns from each other.]</span></div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: 20px; background: #111111; color: #FFFFFF"><span class="disp" style="font-size: 26px; color: #E9A23B">Leadership</span><span style="font-size: 15px; color: #D9D3C7">[Leadership development — mentoring, events and growing future leaders.]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL + STORIES -->
+<section style="padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <p class="eyebrow" style="color: #E9A23B">Global organization</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px); color: #FFFFFF">Where the team is building</h2>
+      <img src="images/global.svg" alt="Globe with connected team locations" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 20px; display: block">
+      <p style="margin: 0; font-size: 13px; color: #B9B3A8">Availability of products and the business opportunity varies by country. [Confirm the current list of available markets.]</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <p class="eyebrow" style="color: #E9A23B">Business stories</p>
+      <article style="display: flex; gap: 16px; padding: 22px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28"><span style="width: 60px; height: 60px; flex: none; border-radius: 999px; background: #2A2825; border: 2px solid #E9A23B; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #B9B3A8">PHOTO</span><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 800">[PARTNER NAME] · [Country]</span><span style="font-size: 15px; color: #D9D3C7">"[Their experience building the business — shared with permission.]"</span></div></article>
+      <article style="display: flex; gap: 16px; padding: 22px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28"><span style="width: 60px; height: 60px; flex: none; border-radius: 999px; background: #2A2825; border: 2px solid #E9A23B; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #B9B3A8">PHOTO</span><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 800">[PARTNER NAME] · [Country]</span><span style="font-size: 15px; color: #D9D3C7">"[Their experience building the business — shared with permission.]"</span></div></article>
+      <article style="display: flex; gap: 16px; padding: 22px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28"><span style="width: 60px; height: 60px; flex: none; border-radius: 999px; background: #2A2825; border: 2px solid #E9A23B; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #B9B3A8">PHOTO</span><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 800">[PARTNER NAME] · [Country]</span><span style="font-size: 15px; color: #D9D3C7">"[Their experience building the business — shared with permission.]"</span></div></article>
+      <a href="stories.html" style="font-weight: 700">See all stories →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background: #1C1B19; padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <p class="eyebrow" style="color: #E9A23B">FAQ</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px); color: #FFFFFF">Frequently asked questions</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{faqs}}" as="f" hint-placeholder-count="5">
+        <div style="border-radius: 14px; background: #111111; border: 1px solid #2E2C28">
+          <button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.expanded}}" style="width: 100%; min-height: 60px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; font: inherit; font-weight: 700; font-size: 16px; text-align: left; color: #FFFFFF; cursor: pointer">{{f.q}}<span aria-hidden="true" style="font-size: 22px; color: #E9A23B">{{f.icon}}</span></button>
+          <sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; padding: 0 20px 18px; color: #D9D3C7">{{f.a}}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- INTEREST FORM -->
+<section id="interest" style="padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <p class="eyebrow" style="color: #E9A23B">Get started</p>
+      <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px); color: #FFFFFF">How to learn more</h2>
+      <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-weight: 600">
+        <li style="display: flex; gap: 14px; align-items: center"><span style="width: 34px; height: 34px; border-radius: 999px; background: #E9A23B; color: #111111; display: flex; align-items: center; justify-content: center; font-weight: 800">1</span>Submit the short interest form</li>
+        <li style="display: flex; gap: 14px; align-items: center"><span style="width: 34px; height: 34px; border-radius: 999px; background: #2E2C28; display: flex; align-items: center; justify-content: center; font-weight: 800">2</span>Wonge or a team member follows up</li>
+        <li style="display: flex; gap: 14px; align-items: center"><span style="width: 34px; height: 34px; border-radius: 999px; background: #2E2C28; display: flex; align-items: center; justify-content: center; font-weight: 800">3</span>Learn about the business at your own pace</li>
+      </ol>
+    </div>
+    <div style="padding: 36px; border-radius: 24px; background: #1C1B19; border: 1px solid #2E2C28">
+      <sc-if value="{{formOpen}}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{submit}}" style="display: flex; flex-direction: column; gap: 16px">
+          <h3 class="disp" style="font-size: 34px; color: #FFFFFF">Unicity interest form</h3>
+          <label class="field">Full name*<input type="text" required="required" autocomplete="name"></label>
+          <label class="field">Email address*<input type="email" required="required" autocomplete="email"></label>
+          <label class="field">Mobile / WhatsApp number*<input type="tel" required="required" autocomplete="tel"></label>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px">
+            <label class="field">Country*<select required="required"><option value="">Select</option><option>Canada</option><option>Nepal</option><option>United States</option><option>United Kingdom</option><option>Australia</option><option>India</option><option>Other</option></select></label>
+            <label class="field">Preferred language<select><option>English</option><option>Nepali</option><option>Hindi</option><option>Other</option></select></label>
+          </div>
+          <p style="margin: 0; font-size: 12px; color: #B9B3A8">Used only to follow up on this request. You won't be added to unrelated marketing lists without your consent. <a href="connect.html">Privacy Policy</a></p>
+          <button type="submit" class="btn btn-gold">I want to learn more →</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{formDone}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 16px; min-height: 380px; justify-content: center">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7 12.5l3.2 3L17 9"></path></svg>
+          <h3 class="disp" style="font-size: 36px; color: #FFFFFF">Thank you for your interest</h3>
+          <p style="margin: 0; color: #D9D3C7">Your information has been received. Wonge or the appropriate team member can use the information you provided to follow up regarding your request.</p>
+          <a class="btn btn-ghost-d" href="#whatsapp" style="align-self: flex-start">Talk to Wonge on WhatsApp</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<footer style="background: #0A0A0A; color: #B9B3A8; padding: 40px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 16px; font-size: 13px">
+    <p style="margin: 0">Wonge Sherpa is an independent Unicity distributor. This page does not promise income, health outcomes or business results. Product, health, earnings and opportunity statements follow applicable laws and current Unicity policies. Individual results vary. Products are not intended to diagnose, treat, cure or prevent any disease.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+      <span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span>
+      <span>© 2026 WongEX · <a href="connect.html" style="color: #B9B3A8">Privacy</a> · <a href="connect.html" style="color: #B9B3A8">Terms</a> · <a href="connect.html" style="color: #B9B3A8">Earnings disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+
+<sc-if value="{{videoOpen}}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="Video player" style="position: fixed; inset: 0; z-index: 50; background: rgba(10, 10, 10, 0.92); display: flex; align-items: center; justify-content: center; padding: 24px">
+    <div style="width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+        <span class="disp" style="font-size: 30px; color: #FFFFFF">My Unicity journey</span>
+        <button type="button" onClick="{{closeVideo}}" aria-label="Close video" style="width: 48px; height: 48px; flex: none; border-radius: 999px; border: 1.5px solid #4A4740; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
+      <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #000000">
+        <img src="images/eco-unicity.svg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0.4">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center">
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">VIDEO SLOT</span>
+          <span style="max-width: 520px; font-size: 18px; font-weight: 600; color: #FFFFFF">Connect the MP4 file or YouTube / Vimeo link for this video here.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</template>
+<script>
+/* WongEX page runtime: renders the template, handles state & events (no dependencies) */
+(function(){
+  class DCLogic { constructor(props){ this.props = props || {}; this.state = {}; }
+    setState(p){ Object.assign(this.state, typeof p === 'function' ? p(this.state) : p); if (this._render) this._render(); }
+    forceUpdate(){ if (this._render) this._render(); } }
+  window.DCLogic = DCLogic;
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g, WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+  function look(path, scope){
+    if (path === 'true') return true; if (path === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+    var parts = path.split('.'), v = scope;
+    for (var i = 0; i < parts.length; i++){ if (v == null) return undefined; v = v[parts[i]]; }
+    return v;
+  }
+  var EV = { onclick: 'click', onsubmit: 'submit', onchange: 'change', oninput: 'input' };
+  function renderNodes(node, scope, ns){
+    if (node.nodeType === 3){
+      var t = node.nodeValue;
+      if (t.indexOf('{{') < 0) return [document.createTextNode(t)];
+      return [document.createTextNode(t.replace(HOLE, function(_, p){ var v = look(p, scope); return v == null ? '' : String(v); }))];
+    }
+    if (node.nodeType !== 1) return [];
+    var tag = node.nodeName.toLowerCase();
+    if (tag === 'sc-if'){
+      var m = WHOLE.exec(node.getAttribute('value') || '');
+      if (!(m && look(m[1], scope))) return [];
+      return kids(node, scope, ns);
+    }
+    if (tag === 'sc-for'){
+      var lm = WHOLE.exec(node.getAttribute('list') || ''); var list = lm ? look(lm[1], scope) : [];
+      var as = node.getAttribute('as') || 'item', out = [];
+      (list || []).forEach(function(it, i){ var s = Object.create(scope); s[as] = it; s.$index = i; out.push.apply(out, kids(node, s, ns)); });
+      return out;
+    }
+    var SVG = 'http://www.w3.org/2000/svg'; if (tag === 'svg') ns = SVG;
+    var el = ns ? document.createElementNS(ns, node.nodeName) : document.createElement(tag); el._dcH = {};
+    for (var a = 0; a < node.attributes.length; a++){
+      var at = node.attributes[a], name = at.name, val = at.value, lname = name.toLowerCase();
+      if (lname.indexOf('hint-') === 0) continue;
+      var w = WHOLE.exec(val);
+      if (EV[lname]){ if (w){ var fn = look(w[1], scope); if (typeof fn === 'function') el._dcH[EV[lname]] = fn; } continue; }
+      if (w){
+        var v = look(w[1], scope);
+        if (lname === 'checked'){ el._dcChecked = !!v; if (v) el.setAttribute('checked', ''); continue; }
+        if (v === false || v == null) continue;
+        el.setAttribute(name, v === true ? '' : String(v)); continue;
+      }
+      if (val.indexOf('{{') >= 0) val = val.replace(HOLE, function(_, p){ var x = look(p, scope); return x == null ? '' : String(x); });
+      el.setAttribute(name, val);
+    }
+    kids(node, scope, ns).forEach(function(c){ el.appendChild(c); });
+    return [el];
+  }
+  function kids(node, scope, ns){ var out = []; var src = node.content || node; for (var c = src.firstChild; c; c = c.nextSibling) out.push.apply(out, renderNodes(c, scope, ns)); return out; }
+  function morph(from, to){
+    if (from.nodeType !== to.nodeType || from.nodeName !== to.nodeName){ from.parentNode.replaceChild(to, from); return; }
+    if (from.nodeType === 3){ if (from.nodeValue !== to.nodeValue) from.nodeValue = to.nodeValue; return; }
+    var i;
+    for (i = from.attributes.length - 1; i >= 0; i--){ var n = from.attributes[i].name; if (!to.hasAttribute(n)) from.removeAttribute(n); }
+    for (i = 0; i < to.attributes.length; i++){ var at = to.attributes[i]; if (from.getAttribute(at.name) !== at.value) from.setAttribute(at.name, at.value); }
+    from._dcH = to._dcH;
+    if (to._dcChecked !== undefined){ from.checked = to._dcChecked; }
+    patchChildren(from, Array.prototype.slice.call(to.childNodes));
+  }
+  function patchChildren(parent, next){
+    var cur = Array.prototype.slice.call(parent.childNodes), i;
+    for (i = 0; i < next.length; i++){ if (i < cur.length) morph(cur[i], next[i]); else parent.appendChild(next[i]); }
+    for (i = next.length; i < cur.length; i++) parent.removeChild(cur[i]);
+  }
+  window.mountDC = function(root, tpl, Component){
+    var comp = new Component({});
+    comp._render = function(){ var vals = comp.renderVals ? comp.renderVals() : {}; patchChildren(root, kids(tpl, vals)); };
+    ['click', 'submit', 'change', 'input'].forEach(function(type){
+      root.addEventListener(type, function(e){
+        for (var el = e.target; el && el !== root.parentNode; el = el.parentNode){ if (el._dcH && el._dcH[type]){ el._dcH[type](e); break; } }
+      });
+    });
+    comp._render();
+    if (comp.componentDidMount) comp.componentDidMount();
+  };
+})();
+
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { tab: 0, faq: 0, done: false, video: false }; }
+  renderVals() {
+    const s = this.state;
+    const tabData = [
+      { label: 'My journey', title: 'Wonge’s Unicity journey', body: '[Wonge to add: how and why he started with Unicity, what the experience has taught him, and where his organization is today.]', points: ['[Why I started]', '[What I have learned]', '[Where we are building]'], img: 'images/eco-unicity.svg' },
+      { label: 'Business overview', title: 'How the business works', body: '[A plain-language overview of the independent distributor model, how partners get started, and what the day-to-day work involves.]', points: ['[Getting started]', '[How partners build]', '[Time and commitment involved]'], img: 'images/eco-business.svg' },
+      { label: 'Products & wellness', title: 'The wellness ecosystem', body: '[Product categories and the Feel Great program, described using only company-approved wording.]', points: ['[Product category]', '[Product category]', 'Feel Great referral: [LINK]'], img: 'images/eco-commerce.svg' },
+      { label: 'Training & support', title: 'Training & support', body: '[The training, tools and mentoring available to new partners on Wonge’s team.]', points: ['[Onboarding]', '[Weekly training]', '[Mentoring]'], img: 'images/mission.svg' },
+      { label: 'Global team', title: 'A global organization', body: '[Countries where the team is active and how international partners work together.]', points: ['[Country]', '[Country]', '[Country]'], img: 'images/global.svg' }
+    ];
+    const tabs = tabData.map((t, k) => ({ label: t.label, selected: k === s.tab ? 'true' : 'false', bg: k === s.tab ? '#E9A23B' : 'transparent', fg: k === s.tab ? '#111111' : '#FFFFFF', border: k === s.tab ? '#E9A23B' : '#4A4740', pick: () => this.setState({ tab: k }) }));
+    const faqData = [
+      { q: 'Do I need experience to start?', a: '[Answer from Wonge — training and support available for beginners.]' },
+      { q: 'How much does it cost to get started?', a: '[State the current official starting options and costs per country.]' },
+      { q: 'How much can I earn?', a: 'Earnings vary widely and depend on individual effort, skills, time and market. Please review the official income disclosure statement: [LINK].' },
+      { q: 'Is this the same as Build Your Brand?', a: 'No. Build Your Brand is a separate, 100% free education initiative and does not require joining Unicity.' },
+      { q: 'Which countries are available?', a: '[Confirm current markets where products and the opportunity are available.]' }
+    ];
+    const faqs = faqData.map((f, k) => ({ ...f, open: s.faq === k, expanded: s.faq === k ? 'true' : 'false', icon: s.faq === k ? '−' : '+', toggle: () => this.setState({ faq: s.faq === k ? -1 : k }) }));
+    return {
+      tabs, tab: tabData[s.tab], faqs,
+      formOpen: !s.done, formDone: s.done,
+      submit: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ done: true }); },
+      videoOpen: s.video,
+      openVideo: () => this.setState({ video: true }),
+      closeVideo: () => this.setState({ video: false })
+    };
+  }
+}
+mountDC(document.getElementById('app'), document.getElementById('page'), Component);
+</script>
+</body>
+</html>

@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WongEX4U — Wonge Sherpa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{color:#8A520A}a:hover{color:#5E3705}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+.disp{font-family:'Anton','Impact',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:0.01em;line-height:0.98;margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-gold{background:#E9A23B;color:#111111}.btn-gold:hover{background:#F2B65A;color:#111111}
+.btn-ghost-d{border-color:#4A4740;color:#FFFFFF}.btn-ghost-d:hover{border-color:#E9A23B;color:#FFFFFF}
+.btn-dark{background:#111111;color:#FFFFFF}.btn-dark:hover{background:#2A2825;color:#FFFFFF}
+.btn-ghost-l{border-color:#111111;color:#111111}.btn-ghost-l:hover{background:#111111;color:#FFFFFF}
+.navlink{color:#D9D3C7;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.1em}.navlink:hover{color:#E9A23B}
+.field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
+.field input,.field select,.field textarea{min-height:48px;border-radius:10px;border:1.5px solid #CFC6B6;background:#FFFFFF;padding:0 14px;font:inherit;font-weight:400;font-size:15px;color:#111111}
+.field textarea{padding:12px 14px;min-height:88px}
+.dfield input,.dfield select{border-color:#3A3833;background:#1C1B19;color:#FFFFFF}
+.chk{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border:1.5px solid #DDD5C7;border-radius:10px;background:#FFFFFF;font-size:14px;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:#111111}
+.card-hover{transition:transform .2s ease}.card-hover:hover{transform:translateY(-3px)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="page">
+
+
+<div style="width: 100%; background: #F5F1EA; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
+
+<!-- ============ NAV ============ -->
+<header style="background: #111111; border-bottom: 1px solid #2E2C28">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+      <span style="width: 44px; height: 44px; border-radius: 10px; background: #E9A23B; display: flex; align-items: center; justify-content: center">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M2 20 L9 7 L13 13 L16 9 L22 20 Z"></path></svg>
+      </span>
+      <span style="display: flex; flex-direction: column; line-height: 1">
+        <span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span>
+        <span style="font-size: 11px; letter-spacing: 0.18em; color: #B9B3A8; margin-top: 4px">WONGE SHERPA</span>
+      </span>
+    </a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center">
+      <a class="navlink" href="#top" style="color: #E9A23B">HOME</a>
+      <a class="navlink" href="about.html">ABOUT</a>
+      <a class="navlink" href="#ecosystem">ECOSYSTEM</a>
+      <a class="navlink" href="free-training.html">LEARN</a>
+      <a class="navlink" href="stories.html">STORIES</a>
+      <a class="navlink" href="media.html">MEDIA</a>
+      <a class="navlink" href="impact.html">IMPACT</a>
+      <a class="navlink" href="connect.html">CONNECT</a>
+    </nav>
+    <a class="btn btn-gold" href="connect.html">Work with Wonge
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ============ 01 HERO ============ -->
+<section id="top" style="background: #111111; color: #FFFFFF; padding: 72px 0 88px">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 28px">
+      <p class="eyebrow" style="color: #E9A23B">Hi, I'm Wonge Sherpa</p>
+      <h1 class="disp" style="font-size: clamp(56px, 8vw, 112px); color: #FFFFFF">Build business.<br><span style="color: #E9A23B">Build people.</span><br>Build legacy.</h1>
+      <p style="margin: 0; font-size: 19px; color: #D9D3C7; max-width: 560px">I'm an entrepreneur and business builder focused on helping people develop entrepreneurial skills, build businesses, create additional income opportunities, and think bigger about their future.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="btn btn-gold" href="#story">My story</a>
+        <a class="btn btn-ghost-d" href="#ecosystem">Explore my ecosystem</a>
+        <a class="btn btn-ghost-d" href="#connect">Connect with me</a>
+      </div>
+    </div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: 16px">
+      <div style="position: relative; aspect-ratio: 4 / 5; border-radius: 24px; background: #1C1B19; border: 1px solid #2E2C28; overflow: hidden; display: flex; align-items: flex-end; justify-content: center">
+        <img src="images/hero.svg" alt="Himalayan peaks at dawn with prayer flags" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+        <div style="position: absolute; top: 20px; left: 20px; right: 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+          <span style="padding: 6px 12px; border-radius: 999px; background: #111111; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #D9D3C7">REPLACE WITH WONGE'S PHOTO</span>
+          <span style="padding: 6px 12px; border-radius: 999px; background: #111111; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #E9A23B">INTRO VIDEO · 1:30</span>
+        </div>
+        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center">
+          <button type="button" onClick="{{openIntro}}" aria-label="Play introduction video" style="width: 88px; height: 88px; border-radius: 999px; border: 4px solid #111111; background: #E9A23B; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+          </button>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 2px; padding: 18px 22px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28">
+        <span class="disp" style="font-size: 30px; color: #FFFFFF">Wonge Sherpa</span>
+        <span style="font-size: 14px; font-weight: 600; color: #E9A23B">Independent Global Entrepreneur</span>
+        <span style="font-size: 14px; color: #B9B3A8">Business Builder · Trainer · Motivational Speaker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- route strip -->
+<div style="background: #E9A23B; color: #111111">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: center; padding-top: 16px; padding-bottom: 16px; font-weight: 800; font-size: 14px; letter-spacing: 0.14em">
+    <span>NEPAL</span><span aria-hidden="true">→</span><span>DUBAI</span><span aria-hidden="true">→</span><span>NEPAL</span><span aria-hidden="true">→</span><span>CANADA</span><span aria-hidden="true">→</span><span>WONGEX</span><span aria-hidden="true">→</span><span>GLOBAL</span>
+  </div>
+</div>
+
+<!-- ============ 02 MISSION ============ -->
+<section style="padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <p class="eyebrow" style="color: #8A520A">02 — My mission</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px)">Success means more when we help others grow with us.</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px; font-size: 18px; color: #3A3732">
+      <p style="margin: 0">From Nepal to Dubai to Canada, my journey has been built through entrepreneurship, challenges, learning, leadership and the belief that success becomes more meaningful when we help others grow with us.</p>
+      <p style="margin: 0">I want to equip people with the mindset, skills, systems and opportunities to build stronger businesses and better financial futures — and let real, documented results show what is possible.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 8px">
+        <div style="padding: 18px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0"><div class="disp" style="font-size: 24px">Build yourself</div></div>
+        <div style="padding: 18px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0"><div class="disp" style="font-size: 24px">Build your business</div></div>
+        <div style="padding: 18px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0"><div class="disp" style="font-size: 24px">Build your wealth</div></div>
+        <div style="padding: 18px; border-radius: 14px; background: #111111; color: #E9A23B"><div class="disp" style="font-size: 24px">Build your impact</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 TWO PATHWAYS ============ -->
+<section id="paths" style="padding: 0 0 104px">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">03 — Choose your path</p>
+      <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px)">Two ways to start with WongEX</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+      <div class="card-hover" style="display: flex; flex-direction: column; gap: 22px; padding: 40px; border-radius: 24px; background: #111111; color: #FFFFFF">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+          <span class="eyebrow" style="color: #B9B3A8">Pathway 01</span>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"></path></svg>
+        </div>
+        <h3 class="disp" style="font-size: 48px; color: #FFFFFF">Unicity Business</h3>
+        <p style="margin: 0; font-size: 17px; color: #D9D3C7">Build a global business with Wonge. Explore his Unicity journey, the business overview, wellness ecosystem, training, team culture and leadership development.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #D9D3C7">
+          <li style="display: flex; gap: 10px"><span style="color: #E9A23B">—</span>Business overview &amp; how it works</li>
+          <li style="display: flex; gap: 10px"><span style="color: #E9A23B">—</span>Training, support &amp; team stories</li>
+          <li style="display: flex; gap: 10px"><span style="color: #E9A23B">—</span>Talk to Wonge on WhatsApp</li>
+        </ul>
+        <a class="btn btn-gold" href="unicity-business.html" style="align-self: flex-start; margin-top: auto">Explore Unicity business →</a>
+      </div>
+      <div class="card-hover" style="display: flex; flex-direction: column; gap: 22px; padding: 40px; border-radius: 24px; background: #E9A23B; color: #111111">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+          <span class="eyebrow" style="color: #3A2508">Pathway 02</span>
+          <span style="padding: 8px 14px; border-radius: 999px; background: #111111; color: #E9A23B; font-size: 12px; font-weight: 800; letter-spacing: 0.12em">100% FREE</span>
+        </div>
+        <h3 class="disp" style="font-size: 48px">Build Your Brand <span style="font-size: 28px">with WongEX</span></h3>
+        <p style="margin: 0; font-size: 17px; color: #2A1C06">Free practical education for people who want to build their brand, develop business skills and grow through social media.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; font-size: 13px; font-weight: 800; letter-spacing: 0.06em">
+          <span style="padding: 10px 12px; border-radius: 10px; border: 1.5px solid #111111">NO MEMBERSHIP FEE</span>
+          <span style="padding: 10px 12px; border-radius: 10px; border: 1.5px solid #111111">NO MENTORING FEE</span>
+          <span style="padding: 10px 12px; border-radius: 10px; border: 1.5px solid #111111">NO TRAINING FEE</span>
+          <span style="padding: 10px 12px; border-radius: 10px; border: 1.5px solid #111111">NO NEED TO JOIN UNICITY</span>
+        </div>
+        <a class="btn btn-dark" href="build-your-brand.html" style="align-self: flex-start; margin-top: auto">Start free →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 STORY ============ -->
+<section id="story" style="background: #111111; color: #FFFFFF; padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <p class="eyebrow" style="color: #E9A23B">04 — My story</p>
+        <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px); color: #FFFFFF">There is a journey behind the name.</h2>
+      </div>
+      <p style="margin: 0; font-size: 18px; color: #D9D3C7">Who I am. Where I started. What I learned. What I am building. And why I want to help.</p>
+    </div>
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px">
+      <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28">
+        <img src="images/nepal.svg" alt="Stupa and Himalayan peaks in Nepal" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">01 · NEPAL</span>
+        <span class="disp" style="font-size: 26px; color: #FFFFFF">The beginning</span>
+        <span style="font-size: 14px; color: #B9B3A8">[Early life, family and first lessons]</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28">
+        <img src="images/dubai.svg" alt="Dubai skyline at sunset" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">02 · DUBAI</span>
+        <span class="disp" style="font-size: 26px; color: #FFFFFF">Global business</span>
+        <span style="font-size: 14px; color: #B9B3A8">Learning sales, management &amp; global business</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28">
+        <img src="images/tourism.svg" alt="Trekker on a Himalayan trail" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">03 · NEPAL</span>
+        <span class="disp" style="font-size: 26px; color: #FFFFFF">Coming home</span>
+        <span style="font-size: 14px; color: #B9B3A8">Tourism · Entrepreneurship · Leadership</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28">
+        <img src="images/canada.svg" alt="Canadian Rockies, lake and maple leaf" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">04 · CANADA</span>
+        <span class="disp" style="font-size: 26px; color: #FFFFFF">Starting again</span>
+        <span style="font-size: 14px; color: #B9B3A8">New challenges · New opportunities</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #1C1B19; border: 1px solid #2E2C28">
+        <img src="images/wongex.svg" alt="WongEX workspace with laptop and growth chart" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">05 · WONGEX</span>
+        <span class="disp" style="font-size: 26px; color: #FFFFFF">My own brand</span>
+        <span style="font-size: 14px; color: #B9B3A8">Building my own global brand</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 18px; background: #E9A23B; color: #111111">
+        <img src="images/global.svg" alt="Globe with connected cities" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #3A2508">06 · GLOBAL</span>
+        <span class="disp" style="font-size: 26px">Creating impact</span>
+        <span style="font-size: 14px; color: #2A1C06">Building businesses · Developing leaders · Creating impact</span>
+      </li>
+    </ol>
+    <a class="btn btn-ghost-d" href="about.html" style="align-self: flex-start">Read the full story →</a>
+  </div>
+</section>
+
+<!-- ============ 05 BUILD YOUR BRAND ============ -->
+<section id="build-your-brand" style="padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
+    <div style="display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">05 — Build Your Brand with WongEX</p>
+      <h2 class="disp" style="font-size: clamp(48px, 7vw, 96px)">Your idea. Your story.<br>Your business. <span style="color: #8A520A">Your brand.</span></h2>
+      <p style="margin: 0; font-size: 14px; font-weight: 800; letter-spacing: 0.3em">LEARN · BUILD · GROW · LEAD</p>
+    </div>
+
+    <!-- Why I created -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: stretch">
+      <div style="position: relative; min-height: 360px; border-radius: 24px; background: #111111; overflow: hidden; display: flex; align-items: center; justify-content: center">
+        <img src="images/mission.svg" alt="Speaker on stage in front of an audience" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+        <span style="position: absolute; top: 20px; left: 22px; padding: 6px 12px; border-radius: 999px; background: #111111; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #E9A23B">MISSION VIDEO · 3:00</span>
+        <button type="button" onClick="{{openMission}}" aria-label="Play mission video" style="position: relative; width: 84px; height: 84px; border-radius: 999px; border: none; background: #E9A23B; display: flex; align-items: center; justify-content: center; cursor: pointer">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+        </button>
+        <span class="disp" style="position: absolute; bottom: 22px; left: 22px; font-size: 26px; color: #FFFFFF">Why I created Build Your Brand</span>
+      </div>
+      <blockquote style="margin: 0; display: flex; flex-direction: column; gap: 14px; padding: 36px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3DCD0; font-size: 16px; color: #3A3732">
+        <p style="margin: 0">Throughout my journey, I have invested time and money into education, training, mentors, business experience, networking, technology, social media, and learning from other people.</p>
+        <p style="margin: 0; font-weight: 700; color: #111111">I have learned from success. I have learned from failure. I have learned from mistakes. And I am still learning every day.</p>
+        <p style="margin: 0">I believe knowledge becomes more powerful when we share it. Where I have useful knowledge or experience, I want to share it — free. No expectation that you must purchase something from me. No requirement that you join my business.</p>
+        <footer style="margin-top: auto; font-weight: 700; color: #111111">— Wonge Sherpa, <span style="font-weight: 500; color: #5A554D">Founder, WongEX</span></footer>
+      </blockquote>
+    </div>
+
+    <!-- what you'll learn -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+      <div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0; font-weight: 600">Build a personal or business brand</div>
+      <div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0; font-weight: 600">Start or improve a business</div>
+      <div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0; font-weight: 600">Social media &amp; better content</div>
+      <div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0; font-weight: 600">Digital marketing, sales &amp; communication</div>
+      <div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0; font-weight: 600">Leadership &amp; a global mindset</div>
+      <div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E3DCD0; font-weight: 600">Using technology and AI effectively</div>
+    </div>
+
+    <!-- REGISTRATION -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0; border-radius: 28px; overflow: hidden; border: 1px solid #E3DCD0; background: #FFFFFF">
+      <div style="display: flex; flex-direction: column; gap: 20px; padding: 44px; background: #111111; color: #FFFFFF">
+        <span style="align-self: flex-start; padding: 8px 14px; border-radius: 999px; background: #E9A23B; color: #111111; font-size: 12px; font-weight: 800; letter-spacing: 0.12em">FREE REGISTRATION</span>
+        <h3 class="disp" style="font-size: 52px; color: #FFFFFF">Start building your brand</h3>
+        <p style="margin: 0; font-size: 17px; color: #D9D3C7">Join the global WongEX learning community and access free educational content and guidance.</p>
+        <ol style="margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+          <li style="display: flex; gap: 14px; align-items: center"><span style="width: 36px; height: 36px; border-radius: 999px; background: {{step1Bg}}; color: {{step1Fg}}; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px">1</span><span style="font-weight: 600">Tell us about you</span></li>
+          <li style="display: flex; gap: 14px; align-items: center"><span style="width: 36px; height: 36px; border-radius: 999px; background: {{step2Bg}}; color: {{step2Fg}}; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px">2</span><span style="font-weight: 600">Connect with WongEX</span></li>
+          <li style="display: flex; gap: 14px; align-items: center"><span style="width: 36px; height: 36px; border-radius: 999px; background: #2E2C28; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px">3</span><span style="font-weight: 600">Start learning in the free hub</span></li>
+        </ol>
+        <p style="margin: auto 0 0; font-size: 13px; color: #B9B3A8">Access free educational guidance, resources and practical lessons designed to help you develop your brand and business skills. Individual results depend on your actions, experience, market and resources.</p>
+      </div>
+
+      <div style="padding: 44px">
+        <sc-if value="{{bybOpen}}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{submitByb}}" style="display: flex; flex-direction: column; gap: 18px">
+            <p class="eyebrow" style="color: #8A520A">Step 1 — Tell us about you</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px">
+              <label class="field">Full name*<input type="text" required="required" autocomplete="name"></label>
+              <label class="field">Email address*<input type="email" required="required" autocomplete="email"></label>
+              <label class="field">Mobile / WhatsApp*<input type="tel" required="required" autocomplete="tel"></label>
+              <label class="field">Country*<select required="required"><option value="">Select country</option><option>Canada</option><option>Nepal</option><option>United States</option><option>United Kingdom</option><option>Australia</option><option>India</option><option>United Arab Emirates</option><option>Other</option></select></label>
+            </div>
+            <fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 10px">
+              <legend style="font-size: 13px; font-weight: 600; margin-bottom: 8px">Do you currently have a business?</legend>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px">
+                <label class="chk"><input type="radio" name="bizstatus" checked="{{isYes}}" onChange="{{setYes}}">Yes</label>
+                <label class="chk"><input type="radio" name="bizstatus" checked="{{isNo}}" onChange="{{setNo}}">No</label>
+                <label class="chk"><input type="radio" name="bizstatus" checked="{{isPlan}}" onChange="{{setPlan}}">Planning to start</label>
+              </div>
+            </fieldset>
+            <sc-if value="{{isYes}}" hint-placeholder-val="{{ false }}">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px">
+                <label class="field">Business / brand name<input type="text"></label>
+                <label class="field">What type of business do you operate?<input type="text"></label>
+              </div>
+            </sc-if>
+            <sc-if value="{{showBuild}}" hint-placeholder-val="{{ false }}">
+              <label class="field">What would you like to build?<input type="text"></label>
+            </sc-if>
+            <fieldset style="margin: 0; padding: 0; border: none">
+              <legend style="font-size: 13px; font-weight: 600; margin-bottom: 8px">Primary goal (choose any)</legend>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px">
+                <sc-for list="{{goals}}" as="g" hint-placeholder-count="10">
+                  <label class="chk"><input type="checkbox">{{g}}</label>
+                </sc-for>
+              </div>
+            </fieldset>
+            <label class="field" style="max-width: 280px">Preferred language (optional)<select><option>English</option><option>Nepali</option><option>Hindi</option><option>Other</option></select></label>
+            <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #5A554D"><input type="checkbox" required="required" style="width: 18px; height: 18px; margin-top: 2px; accent-color: #111111">I agree that WongEX may use these details to send me Build Your Brand learning content. I can unsubscribe any time. See the <a href="#privacy">Privacy Policy</a>. This registration does not add me to any Unicity or other business list.</label>
+            <button type="submit" class="btn btn-dark" style="align-self: flex-start">Join free →</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{bybDone}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; gap: 18px">
+            <p class="eyebrow" style="color: #8A520A">Step 2 — Connect with WongEX</p>
+            <h4 class="disp" style="font-size: 40px">Welcome to Build Your Brand with WongEX</h4>
+            <p style="margin: 0; color: #5A554D">Your learning journey starts here. Follow the official channels — they open in a new tab so you can follow voluntarily.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px">
+              <a class="btn btn-ghost-l" href="#instagram" style="justify-content: space-between">Follow on Instagram <span aria-hidden="true">→</span></a>
+              <a class="btn btn-ghost-l" href="#tiktok" style="justify-content: space-between">Follow on TikTok <span aria-hidden="true">→</span></a>
+              <a class="btn btn-ghost-l" href="#youtube" style="justify-content: space-between">Subscribe on YouTube <span aria-hidden="true">→</span></a>
+              <a class="btn btn-ghost-l" href="#facebook" style="justify-content: space-between">Follow on Facebook <span aria-hidden="true">→</span></a>
+              <a class="btn btn-ghost-l" href="#x" style="justify-content: space-between">Follow on X <span aria-hidden="true">→</span></a>
+              <a class="btn btn-ghost-l" href="#linkedin" style="justify-content: space-between">Follow on LinkedIn <span aria-hidden="true">→</span></a>
+            </div>
+            <a class="btn btn-gold" href="#learn" style="align-self: flex-start">Step 3 — Start learning →</a>
+            <button type="button" onClick="{{resetByb}}" style="align-self: flex-start; background: none; border: none; padding: 8px 0; font: inherit; font-size: 13px; color: #5A554D; text-decoration: underline; cursor: pointer">Register someone else</button>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNICITY (separate pathway + form) ============ -->
+<section id="unicity" style="background: #1C1B19; color: #FFFFFF; padding: 104px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 22px">
+      <p class="eyebrow" style="color: #E9A23B">Pathway 01 — Unicity Business</p>
+      <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px); color: #FFFFFF">Build a global business with Wonge</h2>
+      <p style="margin: 0; font-size: 17px; color: #D9D3C7">For visitors specifically interested in Wonge's Unicity business: his journey, the business overview, wellness products, training and support, team culture and leadership development.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 15px">
+        <div style="padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833">Wonge's Unicity journey</div>
+        <div style="padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833">Products &amp; wellness ecosystem</div>
+        <div style="padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833">Training &amp; support</div>
+        <div style="padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833">Team culture &amp; leadership</div>
+        <div style="padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833">Business stories &amp; FAQ</div>
+        <div style="padding: 14px 16px; border-radius: 12px; border: 1px solid #3A3833">Feel Great referral [LINK]</div>
+      </div>
+      <button type="button" onClick="{{openUni}}" aria-label="Play video: my Unicity journey" style="position: relative; display: block; width: 100%; padding: 0; border: none; border-radius: 18px; overflow: hidden; background: #111111; cursor: pointer; text-align: left">
+        <img src="images/eco-unicity.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+        <span style="position: absolute; left: 20px; bottom: 18px; display: flex; align-items: center; gap: 12px; color: #FFFFFF; font-weight: 700">
+          <span style="width: 52px; height: 52px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+          Watch: my Unicity journey
+        </span>
+      </button>
+      <p style="margin: 0; font-size: 13px; color: #B9B3A8">No income, health outcome or business result is promised. All product, health, earnings and opportunity statements follow applicable laws and current Unicity policies. Individual results vary.</p>
+    </div>
+    <div style="padding: 36px; border-radius: 24px; background: #111111; border: 1px solid #2E2C28">
+      <sc-if value="{{uniOpen}}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{submitUni}}" style="display: flex; flex-direction: column; gap: 16px">
+          <h3 class="disp" style="font-size: 34px; color: #FFFFFF">Unicity interest form</h3>
+          <label class="field dfield" style="color: #D9D3C7">Full name*<input type="text" required="required" autocomplete="name"></label>
+          <label class="field dfield" style="color: #D9D3C7">Email address*<input type="email" required="required" autocomplete="email"></label>
+          <label class="field dfield" style="color: #D9D3C7">Mobile / WhatsApp*<input type="tel" required="required" autocomplete="tel"></label>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px">
+            <label class="field dfield" style="color: #D9D3C7">Country*<select required="required"><option value="">Select</option><option>Canada</option><option>Nepal</option><option>United States</option><option>United Kingdom</option><option>Australia</option><option>India</option><option>Other</option></select></label>
+            <label class="field dfield" style="color: #D9D3C7">Language (optional)<select><option>English</option><option>Nepali</option><option>Hindi</option><option>Other</option></select></label>
+          </div>
+          <p style="margin: 0; font-size: 12px; color: #B9B3A8">Used only to follow up on this request. We won't add you to unrelated marketing lists without your consent. <a href="#privacy" style="color: #E9A23B">Privacy Policy</a></p>
+          <button type="submit" class="btn btn-gold">I want to learn more →</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{uniDone}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 16px; min-height: 360px; justify-content: center">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7 12.5l3.2 3L17 9"></path></svg>
+          <h3 class="disp" style="font-size: 34px; color: #FFFFFF">Thank you for your interest</h3>
+          <p style="margin: 0; color: #D9D3C7">Your information has been received. Wonge or the appropriate team member can use the information you provided to follow up regarding your request.</p>
+          <a class="btn btn-ghost-d" href="#whatsapp" style="align-self: flex-start">Talk to Wonge on WhatsApp</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 ECOSYSTEM ============ -->
+<section id="ecosystem" style="padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 40px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <p class="eyebrow" style="color: #8A520A">06 — My ecosystem</p>
+        <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px)">One brand. Many ventures.</h2>
+      </div>
+      <p style="margin: 0; font-size: 17px; color: #3A3732">Wonge Sherpa is the person. WongEX4U is the global brand. The businesses sit underneath it, education creates value, media distributes it, community grows around it — and the foundation creates impact.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px">
+      <a href="#ecosystem" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0; text-decoration: none; color: #111111">
+        <img src="images/eco-business.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="disp" style="font-size: 28px">Business &amp; Entrepreneurship</span>
+        <span style="font-size: 15px; color: #5A554D">Business-building, leadership, sales, networking, social media and personal development.</span>
+        <span style="margin-top: auto; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: #8A520A">EXPLORE →</span>
+      </a>
+      <a href="#unicity" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0; text-decoration: none; color: #111111">
+        <img src="images/eco-unicity.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="disp" style="font-size: 28px">Unicity Business</span>
+        <span style="font-size: 15px; color: #5A554D">Wonge's Unicity journey, opportunity, wellness products, leadership development and global team.</span>
+        <span style="margin-top: auto; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: #8A520A">EXPLORE THE OPPORTUNITY →</span>
+      </a>
+      <a href="#ecosystem" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0; text-decoration: none; color: #111111">
+        <img src="images/eco-it.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="disp" style="font-size: 28px">WongEX IT Solutions</span>
+        <span style="font-size: 15px; color: #5A554D">Technology for a connected world — websites, software, digital &amp; payment solutions, business automation, IT services.</span>
+        <span style="margin-top: auto; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: #8A520A">EXPLORE →</span>
+      </a>
+      <a href="#ecosystem" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0; text-decoration: none; color: #111111">
+        <img src="images/eco-commerce.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="disp" style="font-size: 28px">WongEX Commerce</span>
+        <span style="font-size: 15px; color: #5A554D">E-commerce businesses, brands and future online ventures.</span>
+        <span style="margin-top: auto; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: #8A520A">EXPLORE →</span>
+      </a>
+      <a href="#ecosystem" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0; text-decoration: none; color: #111111">
+        <img src="images/eco-travel.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="disp" style="font-size: 28px">Travel &amp; Tourism</span>
+        <span style="font-size: 15px; color: #5A554D">Experience in Nepal's tourism industry and a future travel business.</span>
+        <span style="margin-top: auto; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: #8A520A">EXPLORE →</span>
+      </a>
+      <a href="#impact" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 30px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3DCD0; text-decoration: none; color: #111111">
+        <img src="images/eco-foundation.svg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="disp" style="font-size: 28px">WongEX Foundation</span>
+        <span style="font-size: 15px; color: #5A554D">Success with purpose — education, healthcare, community support and opportunity.</span>
+        <span style="margin-top: auto; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: #8A520A">EXPLORE →</span>
+      </a>
+    </div>
+    <!-- wealth education band -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; align-items: center; padding: 40px; border-radius: 24px; background: #111111; color: #FFFFFF">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <img src="images/wealth.svg" alt="" style="width: 100%; max-width: 420px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; display: block">
+        <span class="eyebrow" style="color: #E9A23B">Wealth &amp; investment education</span>
+        <span class="disp" style="font-size: clamp(32px, 4vw, 48px); color: #FFFFFF">Build → Earn → Save → Invest → Grow</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; color: #D9D3C7">Wonge documents what he personally learns and does around business, equities, real estate and long-term wealth creation.</p>
+        <p style="margin: 0; font-size: 13px; color: #B9B3A8">Educational and personal-experience content only — not individualized financial advice. Speak with a licensed advisor before investing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 FREE LEARNING HUB ============ -->
+<section id="learn" style="background: #EDE6DA; padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <p class="eyebrow" style="color: #8A520A">07 — Learn with Wonge</p>
+        <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px)">WongEX Free Learning Hub</h2>
+        <p style="margin: 0; font-size: 18px; color: #3A3732">From employee mindset → entrepreneurial mindset.</p>
+      </div>
+      <a class="btn btn-dark" href="#build-your-brand">Register free to access →</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <span class="eyebrow" style="color: #5A554D">Latest free video lessons</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px">
+        <button type="button" onClick="{{openL1}}" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 0; border: none; background: none; text-align: left; font: inherit; color: #111111; cursor: pointer">
+          <span style="position: relative; display: block; width: 100%; border-radius: 16px; overflow: hidden">
+            <img src="images/lesson-brand.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+            <span style="position: absolute; left: 14px; bottom: 14px; width: 48px; height: 48px; border-radius: 999px; background: #111111; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="#E9A23B" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+            <span style="position: absolute; right: 12px; bottom: 14px; padding: 4px 10px; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 12px; font-weight: 700">[12:00]</span>
+          </span>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">START YOUR BRAND · FREE</span>
+          <span class="disp" style="font-size: 24px">How to choose your brand identity</span>
+        </button>
+        <button type="button" onClick="{{openL2}}" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 0; border: none; background: none; text-align: left; font: inherit; color: #111111; cursor: pointer">
+          <span style="position: relative; display: block; width: 100%; border-radius: 16px; overflow: hidden">
+            <img src="images/lesson-social.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+            <span style="position: absolute; left: 14px; bottom: 14px; width: 48px; height: 48px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+            <span style="position: absolute; right: 12px; bottom: 14px; padding: 4px 10px; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 12px; font-weight: 700">[08:00]</span>
+          </span>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">SOCIAL MEDIA · FREE</span>
+          <span class="disp" style="font-size: 24px">Hooks that stop the scroll</span>
+        </button>
+        <button type="button" onClick="{{openL3}}" class="card-hover" style="display: flex; flex-direction: column; gap: 12px; padding: 0; border: none; background: none; text-align: left; font: inherit; color: #111111; cursor: pointer">
+          <span style="position: relative; display: block; width: 100%; border-radius: 16px; overflow: hidden">
+            <img src="images/lesson-sales.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+            <span style="position: absolute; left: 14px; bottom: 14px; width: 48px; height: 48px; border-radius: 999px; background: #111111; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="#E9A23B" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+            <span style="position: absolute; right: 12px; bottom: 14px; padding: 4px 10px; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 12px; font-weight: 700">[15:00]</span>
+          </span>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">SALES &amp; MARKETING · FREE</span>
+          <span class="disp" style="font-size: 24px">Follow-up that builds relationships</span>
+        </button>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px">
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">01</span><span class="disp" style="font-size: 24px">Start your brand</span><span style="font-size: 14px; color: #5A554D">Identity, message, audience and positioning.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">02</span><span class="disp" style="font-size: 24px">Social media</span><span style="font-size: 14px; color: #5A554D">Instagram, TikTok, Facebook, YouTube, LinkedIn and X.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">03</span><span class="disp" style="font-size: 24px">Content creation</span><span style="font-size: 14px; color: #5A554D">Videos, storytelling, hooks, captions and communication.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">04</span><span class="disp" style="font-size: 24px">Starting a business</span><span style="font-size: 14px; color: #5A554D">Turning skills, ideas, products or services into a business.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">05</span><span class="disp" style="font-size: 24px">Sales &amp; marketing</span><span style="font-size: 14px; color: #5A554D">Customers, promotion, follow-up and relationships.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">06</span><span class="disp" style="font-size: 24px">Digital business</span><span style="font-size: 14px; color: #5A554D">Websites, digital tools, AI, productivity and online systems.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">07</span><span class="disp" style="font-size: 24px">Business growth</span><span style="font-size: 14px; color: #5A554D">Systems, teams, networking and sustainable expansion.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #FFFFFF; text-decoration: none; color: #111111"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #8A520A">08</span><span class="disp" style="font-size: 24px">Global thinking</span><span style="font-size: 14px; color: #5A554D">How digital platforms help businesses reach broader markets.</span></a>
+      <a href="#learn" class="card-hover" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 18px; background: #111111; text-decoration: none; color: #FFFFFF"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.12em; color: #E9A23B">09</span><span class="disp" style="font-size: 24px">Leadership</span><span style="font-size: 14px; color: #D9D3C7">Discipline, confidence, responsibility and developing others.</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 STORIES / TESTIMONIALS ============ -->
+<section id="stories" style="padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">08 — People I help</p>
+      <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px)">Real people. Real journeys.<br>Real progress.</h2>
+    </div>
+    <div role="group" aria-label="Filter stories by country" style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center">
+      <sc-for list="{{countries}}" as="c" hint-placeholder-count="7">
+        <button type="button" onClick="{{c.pick}}" aria-pressed="{{c.pressed}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1.5px solid #111111; background: {{c.bg}}; color: {{c.fg}}; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">{{c.label}}</button>
+      </sc-for>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+      <sc-for list="{{storyCards}}" as="s" hint-placeholder-count="3">
+        <article class="card-hover" style="display: flex; flex-direction: column; gap: 18px; padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #E3DCD0">
+          <div style="display: flex; gap: 16px; align-items: center">
+            <div style="width: 72px; height: 72px; border-radius: 999px; background: #EDE6DA; border: 2px solid #E9A23B; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #5A554D">PHOTO</div>
+            <div style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 18px; font-weight: 800">{{s.name}}</span>
+              <span style="font-size: 13px; color: #5A554D">{{s.country}} · {{s.background}}</span>
+            </div>
+          </div>
+          <p style="margin: 0; font-size: 16px; color: #3A3732">"{{s.quote}}"</p>
+          <dl style="margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; font-size: 12px">
+            <div style="padding: 10px; border-radius: 10px; background: #F5F1EA"><dt style="font-weight: 800; letter-spacing: 0.08em; color: #8A520A">JOURNEY</dt><dd style="margin: 4px 0 0; color: #3A3732">{{s.journey}}</dd></div>
+            <div style="padding: 10px; border-radius: 10px; background: #F5F1EA"><dt style="font-weight: 800; letter-spacing: 0.08em; color: #8A520A">LEARNED</dt><dd style="margin: 4px 0 0; color: #3A3732">{{s.learned}}</dd></div>
+            <div style="padding: 10px; border-radius: 10px; background: #F5F1EA"><dt style="font-weight: 800; letter-spacing: 0.08em; color: #8A520A">RESULT</dt><dd style="margin: 4px 0 0; color: #3A3732">{{s.result}}</dd></div>
+          </dl>
+          <span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #111111; color: #E9A23B; font-size: 11px; font-weight: 800; letter-spacing: 0.1em">{{s.tag}}</span>
+        </article>
+      </sc-for>
+    </div>
+    <sc-if value="{{noStories}}" hint-placeholder-val="{{ false }}">
+      <p style="margin: 0; text-align: center; color: #5A554D">Stories from this country are coming as the community grows.</p>
+    </sc-if>
+    <p style="margin: 0 auto; max-width: 820px; text-align: center; font-size: 13px; color: #5A554D">Stories are shared with each person's permission. Any income figures shown are documented and are not typical; results depend on individual effort, experience, market and resources. No result is guaranteed.</p>
+  </div>
+</section>
+
+<!-- ============ 09 MEDIA ============ -->
+<section id="media" style="background: #111111; color: #FFFFFF; padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 40px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <p class="eyebrow" style="color: #E9A23B">09 — WongEX Media</p>
+        <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px); color: #FFFFFF">Content that moves people</h2>
+      </div>
+      <p style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.08em; color: #D9D3C7">MOTIVATION · ENTREPRENEURSHIP · LEADERSHIP · BUSINESS · SOCIAL MEDIA · PERSONAL DEVELOPMENT</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+      <div style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; align-items: center; padding: 36px; border-radius: 24px; background: #E9A23B; color: #111111">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <span class="eyebrow" style="color: #3A2508">Coming soon · Podcast &amp; video</span>
+          <span class="disp" style="font-size: clamp(40px, 5vw, 64px)">The Wonge Sherpa Show</span>
+          <span style="font-size: 16px; color: #2A1C06">Interviews with entrepreneurs, leaders, immigrants, successful business partners and inspiring people.</span>
+        </div>
+        <button type="button" onClick="{{openShow}}" aria-label="Play the latest episode of The Wonge Sherpa Show" style="position: relative; display: block; width: 100%; padding: 0; border: none; border-radius: 18px; overflow: hidden; background: #111111; cursor: pointer">
+          <img src="images/show.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+          <span style="position: absolute; top: 14px; left: 16px; padding: 4px 10px; border-radius: 999px; background: #E9A23B; color: #111111; font-size: 11px; font-weight: 800; letter-spacing: 0.12em">EPISODE [01]</span>
+          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center"><span style="width: 76px; height: 76px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span></span>
+        </button>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px">
+      <a href="#tiktok" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28; text-decoration: none; color: #FFFFFF"><img src="images/lesson-social.svg" alt="" style="width: 100%; aspect-ratio: 9 / 12; object-fit: cover; border-radius: 10px; display: block"><span style="font-weight: 800">TikTok</span><span style="font-size: 12px; color: #B9B3A8">[@HANDLE]</span></a>
+      <a href="#instagram" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28; text-decoration: none; color: #FFFFFF"><img src="images/lesson-brand.svg" alt="" style="width: 100%; aspect-ratio: 9 / 12; object-fit: cover; border-radius: 10px; display: block"><span style="font-weight: 800">Instagram</span><span style="font-size: 12px; color: #B9B3A8">[@HANDLE]</span></a>
+      <a href="#facebook" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28; text-decoration: none; color: #FFFFFF"><img src="images/mission.svg" alt="" style="width: 100%; aspect-ratio: 9 / 12; object-fit: cover; border-radius: 10px; display: block"><span style="font-weight: 800">Facebook</span><span style="font-size: 12px; color: #B9B3A8">[PAGE NAME]</span></a>
+      <a href="#youtube" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28; text-decoration: none; color: #FFFFFF"><img src="images/show.svg" alt="" style="width: 100%; aspect-ratio: 9 / 12; object-fit: cover; border-radius: 10px; display: block"><span style="font-weight: 800">YouTube</span><span style="font-size: 12px; color: #B9B3A8">[CHANNEL]</span></a>
+      <a href="#x" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28; text-decoration: none; color: #FFFFFF"><img src="images/eco-business.svg" alt="" style="width: 100%; aspect-ratio: 9 / 12; object-fit: cover; border-radius: 10px; display: block"><span style="font-weight: 800">X</span><span style="font-size: 12px; color: #B9B3A8">[@HANDLE]</span></a>
+      <a href="#whatsapp" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 16px; background: #1C1B19; border: 1px solid #2E2C28; text-decoration: none; color: #FFFFFF"><img src="images/lesson-sales.svg" alt="" style="width: 100%; aspect-ratio: 9 / 12; object-fit: cover; border-radius: 10px; display: block"><span style="font-weight: 800">WhatsApp Channel</span><span style="font-size: 12px; color: #B9B3A8">[CHANNEL LINK]</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 GLOBAL COMMUNITY ============ -->
+<section style="padding: 104px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <p class="eyebrow" style="color: #8A520A">10 — Global community</p>
+      <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px)">One vision.<br>Global community.</h2>
+      <p style="margin: 0; font-size: 17px; color: #3A3732">Choose a country to see its leaders, stories and events. As the community genuinely grows, this map grows with it.</p>
+      <div role="group" aria-label="Choose a country" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <sc-for list="{{commCountries}}" as="k" hint-placeholder-count="6">
+          <button type="button" onClick="{{k.pick}}" aria-pressed="{{k.pressed}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1.5px solid #111111; background: {{k.bg}}; color: {{k.fg}}; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">{{k.label}}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="padding: 32px; border-radius: 24px; background: #111111; color: #FFFFFF; display: flex; flex-direction: column; gap: 22px">
+      <img src="images/global.svg" alt="Globe showing connected WongEX community locations" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; display: block">
+      <div style="display: none">
+        <svg viewBox="0 0 200 100" width="100%" height="100%" aria-hidden="true">
+          <g fill="#3A3833">
+            <circle cx="30" cy="30" r="1.6"></circle><circle cx="36" cy="28" r="1.6"></circle><circle cx="42" cy="30" r="1.6"></circle><circle cx="34" cy="35" r="1.6"></circle><circle cx="40" cy="36" r="1.6"></circle><circle cx="46" cy="40" r="1.6"></circle><circle cx="52" cy="62" r="1.6"></circle><circle cx="56" cy="68" r="1.6"></circle><circle cx="58" cy="74" r="1.6"></circle>
+            <circle cx="94" cy="26" r="1.6"></circle><circle cx="100" cy="28" r="1.6"></circle><circle cx="98" cy="34" r="1.6"></circle><circle cx="102" cy="50" r="1.6"></circle><circle cx="106" cy="58" r="1.6"></circle><circle cx="104" cy="66" r="1.6"></circle>
+            <circle cx="120" cy="30" r="1.6"></circle><circle cx="130" cy="34" r="1.6"></circle><circle cx="140" cy="32" r="1.6"></circle><circle cx="150" cy="38" r="1.6"></circle><circle cx="160" cy="44" r="1.6"></circle><circle cx="168" cy="72" r="1.6"></circle><circle cx="174" cy="76" r="1.6"></circle>
+          </g>
+          <g fill="#E9A23B">
+            <circle cx="38" cy="26" r="3"></circle><circle cx="44" cy="38" r="3"></circle><circle cx="96" cy="28" r="3"></circle><circle cx="140" cy="42" r="3"></circle><circle cx="138" cy="48" r="3"></circle><circle cx="124" cy="46" r="3"></circle><circle cx="172" cy="74" r="3"></circle>
+          </g>
+        </svg>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span class="eyebrow" style="color: #E9A23B">Selected</span>
+        <span class="disp" style="font-size: 40px; color: #FFFFFF">{{commName}}</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+        <a href="#community" style="display: flex; flex-direction: column; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">Leaders</span><span style="font-size: 12px; color: #B9B3A8">View →</span></a>
+        <a href="#community" style="display: flex; flex-direction: column; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">Stories</span><span style="font-size: 12px; color: #B9B3A8">View →</span></a>
+        <a href="#community" style="display: flex; flex-direction: column; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">Events</span><span style="font-size: 12px; color: #B9B3A8">View →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 SOCIAL IMPACT ============ -->
+<section id="impact" style="background: #EDE6DA; padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+      <p class="eyebrow" style="color: #8A520A">11 — Social impact · WongEX Foundation</p>
+      <h2 class="disp" style="font-size: clamp(44px, 6vw, 80px)">Success means more<br>when we lift others.</h2>
+      <p style="margin: 0; max-width: 720px; font-size: 17px; color: #3A3732">A long-term vision of using part of WongEX's success, resources and network to support people who need it — with transparent impact reporting as the foundation grows.</p>
+    </div>
+    <img src="images/impact.svg" alt="A community gathered at sunrise" style="width: 100%; aspect-ratio: 16 / 7; object-fit: cover; border-radius: 24px; display: block">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px">
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #FFFFFF"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg><span class="disp" style="font-size: 24px">Education</span></div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #FFFFFF"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M12 8v8M8 12h8"></path></svg><span class="disp" style="font-size: 24px">Healthcare</span></div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #FFFFFF"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3z"></path><path d="M10 20v-5h4v5"></path></svg><span class="disp" style="font-size: 24px">Essential support</span></div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #FFFFFF"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11l3-3 4 4 3-3 4 4-6 6-3-3-2 2-6-6z"></path></svg><span class="disp" style="font-size: 24px">Opportunity</span></div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #111111; color: #FFFFFF"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E9A23B" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-8-4.8-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.2 12 20 12 20z"></path></svg><span class="disp" style="font-size: 24px; color: #FFFFFF">Community assistance</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND PROMISE ============ -->
+<section style="background: #111111; color: #FFFFFF; padding: 96px 0">
+  <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center">
+    <h2 class="disp" style="font-size: clamp(64px, 9vw, 132px); color: #FFFFFF">I learn.<br><span style="color: #E9A23B">I apply.</span><br>I share.</h2>
+    <div style="display: flex; flex-direction: column; gap: 16px; font-size: 17px; color: #D9D3C7">
+      <p style="margin: 0">I will keep investing in my own learning, training, mentors, experiences and development. Where I gain knowledge that can help other people, I want to simplify it and share it.</p>
+      <p style="margin: 0">Some lessons will come from business. Some from mentors. Some from mistakes. Some from success. And some from continuing to build WongEX itself.</p>
+      <p style="margin: 8px 0 0; font-size: 14px; font-weight: 800; letter-spacing: 0.16em; color: #E9A23B">KNOWLEDGE SHARED · PEOPLE EMPOWERED · BRANDS BUILT</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 CONNECT ============ -->
+<section id="connect" style="padding: 104px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 40px; align-items: center; text-align: center">
+    <p class="eyebrow" style="color: #8A520A">12 — Connect with Wonge</p>
+    <h2 class="disp" style="font-size: clamp(48px, 7vw, 104px)">Ready to build your<br>next chapter?</h2>
+    <div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+      <a class="btn btn-ghost-l" href="#build-your-brand" style="min-height: 64px; border-radius: 16px">I want to start a business</a>
+      <a class="btn btn-ghost-l" href="#learn" style="min-height: 64px; border-radius: 16px">I want to learn</a>
+      <a class="btn btn-ghost-l" href="#unicity" style="min-height: 64px; border-radius: 16px">I'm interested in Unicity</a>
+      <a class="btn btn-ghost-l" href="#ecosystem" style="min-height: 64px; border-radius: 16px">I need IT / digital services</a>
+      <a class="btn btn-ghost-l" href="#connect" style="min-height: 64px; border-radius: 16px">I want to collaborate</a>
+      <a class="btn btn-ghost-l" href="#connect" style="min-height: 64px; border-radius: 16px">Book Wonge to speak</a>
+    </div>
+    <a class="btn btn-gold" href="#whatsapp" style="min-height: 68px; padding: 0 36px; font-size: 17px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path><path d="M9 9.5c.5 2.5 2.5 4.5 5 5l1.2-1.2 1.8.8-.4 1.6c-3.6.4-8.4-4.4-8-8l1.6-.4.8 1.8z"></path></svg>
+      WhatsApp Wonge
+    </a>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: center; font-weight: 700; font-size: 14px">
+      <a href="#instagram">Instagram</a><a href="#tiktok">TikTok</a><a href="#youtube">YouTube</a><a href="#facebook">Facebook</a><a href="#x">X</a><a href="#linkedin">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="privacy" style="background: #111111; color: #B9B3A8; padding: 64px 0 40px">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 36px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <span class="disp" style="font-size: 36px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span>
+        <span style="font-size: 14px">Building entrepreneurs. Creating opportunities. Inspiring the world.</span>
+      </div>
+      <nav aria-label="Pathways" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+        <span style="font-weight: 800; letter-spacing: 0.12em; color: #FFFFFF">PATHWAYS</span>
+        <a href="#build-your-brand" style="color: #B9B3A8">/build-your-brand</a>
+        <a href="#unicity" style="color: #B9B3A8">/unicity-business</a>
+        <a href="#learn" style="color: #B9B3A8">/free-training</a>
+        <a href="#story" style="color: #B9B3A8">/about-wonge</a>
+      </nav>
+      <nav aria-label="Legal" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+        <span style="font-weight: 800; letter-spacing: 0.12em; color: #FFFFFF">LEGAL</span>
+        <a href="#privacy" style="color: #B9B3A8">Privacy Policy</a>
+        <a href="#privacy" style="color: #B9B3A8">Terms of Use</a>
+        <a href="#privacy" style="color: #B9B3A8">Cookie &amp; analytics notice</a>
+        <a href="#privacy" style="color: #B9B3A8">Earnings &amp; product disclaimer</a>
+      </nav>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+        <span style="font-weight: 800; letter-spacing: 0.12em; color: #FFFFFF">LANGUAGE</span>
+        <div style="display: flex; gap: 8px">
+          <button type="button" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1.5px solid #E9A23B; background: #E9A23B; color: #111111; font: inherit; font-weight: 700; cursor: pointer">English</button>
+          <button type="button" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1.5px solid #4A4740; background: transparent; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer">नेपाली</button>
+        </div>
+      </div>
+    </div>
+    <p style="margin: 0; padding-top: 24px; border-top: 1px solid #2E2C28; font-size: 12px">© 2026 WongEX · Wonge Sherpa. Build Your Brand is free educational guidance and does not require joining Unicity or buying any product. Educational content is not financial, legal or health advice. Individual results vary.</p>
+  </div>
+</footer>
+
+<!-- ============ VIDEO LIGHTBOX ============ -->
+<sc-if value="{{videoOpen}}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="Video player" style="position: fixed; inset: 0; z-index: 50; background: rgba(17, 17, 17, 0.9); display: flex; align-items: center; justify-content: center; padding: 24px">
+    <div style="width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+        <span class="disp" style="font-size: 30px; color: #FFFFFF">{{videoTitle}}</span>
+        <button type="button" onClick="{{closeVideo}}" aria-label="Close video" style="width: 48px; height: 48px; flex: none; border-radius: 999px; border: 1.5px solid #4A4740; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
+      <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #000000">
+        <img src="{{videoPoster}}" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0.4">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center; color: #FFFFFF">
+          <span style="width: 72px; height: 72px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">VIDEO SLOT</span>
+          <span style="max-width: 520px; font-size: 18px; font-weight: 600">Connect the MP4 file or the YouTube / Vimeo link for this video here.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</template>
+<script>
+/* WongEX page runtime: renders the template, handles state & events (no dependencies) */
+(function(){
+  class DCLogic { constructor(props){ this.props = props || {}; this.state = {}; }
+    setState(p){ Object.assign(this.state, typeof p === 'function' ? p(this.state) : p); if (this._render) this._render(); }
+    forceUpdate(){ if (this._render) this._render(); } }
+  window.DCLogic = DCLogic;
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g, WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+  function look(path, scope){
+    if (path === 'true') return true; if (path === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+    var parts = path.split('.'), v = scope;
+    for (var i = 0; i < parts.length; i++){ if (v == null) return undefined; v = v[parts[i]]; }
+    return v;
+  }
+  var EV = { onclick: 'click', onsubmit: 'submit', onchange: 'change', oninput: 'input' };
+  function renderNodes(node, scope, ns){
+    if (node.nodeType === 3){
+      var t = node.nodeValue;
+      if (t.indexOf('{{') < 0) return [document.createTextNode(t)];
+      return [document.createTextNode(t.replace(HOLE, function(_, p){ var v = look(p, scope); return v == null ? '' : String(v); }))];
+    }
+    if (node.nodeType !== 1) return [];
+    var tag = node.nodeName.toLowerCase();
+    if (tag === 'sc-if'){
+      var m = WHOLE.exec(node.getAttribute('value') || '');
+      if (!(m && look(m[1], scope))) return [];
+      return kids(node, scope, ns);
+    }
+    if (tag === 'sc-for'){
+      var lm = WHOLE.exec(node.getAttribute('list') || ''); var list = lm ? look(lm[1], scope) : [];
+      var as = node.getAttribute('as') || 'item', out = [];
+      (list || []).forEach(function(it, i){ var s = Object.create(scope); s[as] = it; s.$index = i; out.push.apply(out, kids(node, s, ns)); });
+      return out;
+    }
+    var SVG = 'http://www.w3.org/2000/svg'; if (tag === 'svg') ns = SVG;
+    var el = ns ? document.createElementNS(ns, node.nodeName) : document.createElement(tag); el._dcH = {};
+    for (var a = 0; a < node.attributes.length; a++){
+      var at = node.attributes[a], name = at.name, val = at.value, lname = name.toLowerCase();
+      if (lname.indexOf('hint-') === 0) continue;
+      var w = WHOLE.exec(val);
+      if (EV[lname]){ if (w){ var fn = look(w[1], scope); if (typeof fn === 'function') el._dcH[EV[lname]] = fn; } continue; }
+      if (w){
+        var v = look(w[1], scope);
+        if (lname === 'checked'){ el._dcChecked = !!v; if (v) el.setAttribute('checked', ''); continue; }
+        if (v === false || v == null) continue;
+        el.setAttribute(name, v === true ? '' : String(v)); continue;
+      }
+      if (val.indexOf('{{') >= 0) val = val.replace(HOLE, function(_, p){ var x = look(p, scope); return x == null ? '' : String(x); });
+      el.setAttribute(name, val);
+    }
+    kids(node, scope, ns).forEach(function(c){ el.appendChild(c); });
+    return [el];
+  }
+  function kids(node, scope, ns){ var out = []; var src = node.content || node; for (var c = src.firstChild; c; c = c.nextSibling) out.push.apply(out, renderNodes(c, scope, ns)); return out; }
+  function morph(from, to){
+    if (from.nodeType !== to.nodeType || from.nodeName !== to.nodeName){ from.parentNode.replaceChild(to, from); return; }
+    if (from.nodeType === 3){ if (from.nodeValue !== to.nodeValue) from.nodeValue = to.nodeValue; return; }
+    var i;
+    for (i = from.attributes.length - 1; i >= 0; i--){ var n = from.attributes[i].name; if (!to.hasAttribute(n)) from.removeAttribute(n); }
+    for (i = 0; i < to.attributes.length; i++){ var at = to.attributes[i]; if (from.getAttribute(at.name) !== at.value) from.setAttribute(at.name, at.value); }
+    from._dcH = to._dcH;
+    if (to._dcChecked !== undefined){ from.checked = to._dcChecked; }
+    patchChildren(from, Array.prototype.slice.call(to.childNodes));
+  }
+  function patchChildren(parent, next){
+    var cur = Array.prototype.slice.call(parent.childNodes), i;
+    for (i = 0; i < next.length; i++){ if (i < cur.length) morph(cur[i], next[i]); else parent.appendChild(next[i]); }
+    for (i = next.length; i < cur.length; i++) parent.removeChild(cur[i]);
+  }
+  window.mountDC = function(root, tpl, Component){
+    var comp = new Component({});
+    comp._render = function(){ var vals = comp.renderVals ? comp.renderVals() : {}; patchChildren(root, kids(tpl, vals)); };
+    ['click', 'submit', 'change', 'input'].forEach(function(type){
+      root.addEventListener(type, function(e){
+        for (var el = e.target; el && el !== root.parentNode; el = el.parentNode){ if (el._dcH && el._dcH[type]){ el._dcH[type](e); break; } }
+      });
+    });
+    comp._render();
+    if (comp.componentDidMount) comp.componentDidMount();
+  };
+})();
+
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { biz: 'no', bybDone: false, uniDone: false, storyC: 'All', commC: 'Canada', video: null };
+  }
+  renderVals() {
+    const s = this.state;
+    const videos = {
+      intro: { title: 'Hi, I’m Wonge Sherpa', poster: 'images/hero.svg' },
+      mission: { title: 'Why I created Build Your Brand', poster: 'images/mission.svg' },
+      uni: { title: 'My Unicity journey', poster: 'images/eco-unicity.svg' },
+      show: { title: 'The Wonge Sherpa Show', poster: 'images/show.svg' },
+      l1: { title: 'How to choose your brand identity', poster: 'images/lesson-brand.svg' },
+      l2: { title: 'Hooks that stop the scroll', poster: 'images/lesson-social.svg' },
+      l3: { title: 'Follow-up that builds relationships', poster: 'images/lesson-sales.svg' }
+    };
+    const v = s.video ? videos[s.video] : null;
+    const open = (k) => () => this.setState({ video: k });
+    const goals = ['Build my personal brand', 'Start a business', 'Grow my existing business', 'Learn social media', 'Learn content creation', 'Learn sales and marketing', 'Improve my online presence', 'Reach customers internationally', 'Develop leadership skills', 'Not sure yet — I need guidance'];
+    const stories = [
+      { name: '[PARTNER NAME]', country: 'Canada', background: '[Profession / background]', quote: '[Their journey in their own words — shared with permission]', journey: '[Where they started]', learned: '[What they learned]', result: '[Documented result]', tag: 'BUILD YOUR BRAND' },
+      { name: '[PARTNER NAME]', country: 'Nepal', background: '[Profession / background]', quote: '[Their journey in their own words — shared with permission]', journey: '[Where they started]', learned: '[What they learned]', result: '[Documented result]', tag: 'UNICITY BUSINESS' },
+      { name: '[CLIENT NAME]', country: 'USA', background: '[Business type]', quote: '[What changed for their business — shared with permission]', journey: '[The challenge]', learned: '[What they applied]', result: '[Documented result]', tag: 'WONGEX IT SOLUTIONS' },
+      { name: '[PARTNER NAME]', country: 'UK', background: '[Profession / background]', quote: '[Their journey in their own words — shared with permission]', journey: '[Where they started]', learned: '[What they learned]', result: '[Documented result]', tag: 'BUILD YOUR BRAND' },
+      { name: '[PARTNER NAME]', country: 'Australia', background: '[Profession / background]', quote: '[Their journey in their own words — shared with permission]', journey: '[Where they started]', learned: '[What they learned]', result: '[Documented result]', tag: 'UNICITY BUSINESS' },
+      { name: '[PARTNER NAME]', country: 'India', background: '[Profession / background]', quote: '[Their journey in their own words — shared with permission]', journey: '[Where they started]', learned: '[What they learned]', result: '[Documented result]', tag: 'BUILD YOUR BRAND' }
+    ];
+    const cList = ['All', 'Canada', 'USA', 'Nepal', 'UK', 'Australia', 'India'];
+    const countries = cList.map((c) => {
+      const on = s.storyC === c;
+      return { label: c === 'All' ? 'Worldwide' : c, pressed: on ? 'true' : 'false', bg: on ? '#111111' : 'transparent', fg: on ? '#E9A23B' : '#111111', pick: () => this.setState({ storyC: c }) };
+    });
+    const filtered = s.storyC === 'All' ? stories.slice(0, 3) : stories.filter((x) => x.country === s.storyC);
+    const kList = ['Canada', 'Nepal', 'USA', 'UK', 'Australia', 'India', 'UAE'];
+    const commCountries = kList.map((k) => {
+      const on = s.commC === k;
+      return { label: k, pressed: on ? 'true' : 'false', bg: on ? '#111111' : 'transparent', fg: on ? '#E9A23B' : '#111111', pick: () => this.setState({ commC: k }) };
+    });
+    return {
+      videoOpen: !!v,
+      videoTitle: v ? v.title : '',
+      videoPoster: v ? v.poster : '',
+      openIntro: open('intro'),
+      openMission: open('mission'),
+      openUni: open('uni'),
+      openShow: open('show'),
+      openL1: open('l1'),
+      openL2: open('l2'),
+      openL3: open('l3'),
+      closeVideo: () => this.setState({ video: null }),
+      goals,
+      countries,
+      storyCards: filtered,
+      noStories: filtered.length === 0,
+      commCountries,
+      commName: s.commC,
+      isYes: s.biz === 'yes',
+      isNo: s.biz === 'no',
+      isPlan: s.biz === 'plan',
+      showBuild: s.biz !== 'yes',
+      setYes: () => this.setState({ biz: 'yes' }),
+      setNo: () => this.setState({ biz: 'no' }),
+      setPlan: () => this.setState({ biz: 'plan' }),
+      bybOpen: !s.bybDone,
+      bybDone: s.bybDone,
+      step1Bg: s.bybDone ? '#2E2C28' : '#E9A23B',
+      step1Fg: s.bybDone ? '#FFFFFF' : '#111111',
+      step2Bg: s.bybDone ? '#E9A23B' : '#2E2C28',
+      step2Fg: s.bybDone ? '#111111' : '#FFFFFF',
+      submitByb: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ bybDone: true }); },
+      resetByb: () => this.setState({ bybDone: false }),
+      uniOpen: !s.uniDone,
+      uniDone: s.uniDone,
+      submitUni: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ uniDone: true }); }
+    };
+  }
+}
+mountDC(document.getElementById('app'), document.getElementById('page'), Component);
+</script>
+</body>
+</html>

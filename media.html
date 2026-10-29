@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WongEX Media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{color:#E9A23B}a:hover{color:#F2C477}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+.disp{font-family:'Anton','Impact',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:0.01em;line-height:0.98;margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-gold{background:#E9A23B;color:#111111}.btn-gold:hover{background:#F2B65A;color:#111111}
+.btn-ghost-d{border-color:#4A4740;color:#FFFFFF}.btn-ghost-d:hover{border-color:#E9A23B;color:#FFFFFF}
+.navlink{color:#D9D3C7;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.1em}.navlink:hover{color:#E9A23B}
+.card-hover{transition:transform .2s ease}.card-hover:hover{transform:translateY(-3px)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="page">
+
+
+<div style="width: 100%; background: #111111; color: #FFFFFF; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
+
+<header style="background: #111111; border-bottom: 1px solid #2E2C28">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px">
+    <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+      <span style="width: 44px; height: 44px; border-radius: 10px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M2 20 L9 7 L13 13 L16 9 L22 20 Z"></path></svg></span>
+      <span style="display: flex; flex-direction: column; line-height: 1"><span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span><span style="font-size: 11px; letter-spacing: 0.18em; color: #B9B3A8; margin-top: 4px">WONGE SHERPA</span></span>
+    </a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center">
+      <a class="navlink" href="index.html">HOME</a>
+      <a class="navlink" href="about.html">ABOUT</a>
+      <a class="navlink" href="index.html">ECOSYSTEM</a>
+      <a class="navlink" href="free-training.html">LEARN</a>
+      <a class="navlink" href="stories.html">STORIES</a>
+      <a class="navlink" href="media.html" style="color: #E9A23B">MEDIA</a>
+      <a class="navlink" href="impact.html">IMPACT</a>
+      <a class="navlink" href="connect.html">CONNECT</a>
+    </nav>
+    <a class="btn btn-gold" href="connect.html">Work with Wonge →</a>
+  </div>
+</header>
+
+<!-- HERO / SHOW -->
+<section style="padding: 72px 0 88px">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <p class="eyebrow" style="color: #E9A23B">WongEX Media</p>
+      <h1 class="disp" style="font-size: clamp(56px, 8vw, 116px); color: #FFFFFF">The Wonge<br>Sherpa <span style="color: #E9A23B">Show</span></h1>
+      <p style="margin: 0; max-width: 640px; font-size: 18px; color: #D9D3C7">Interviews with entrepreneurs, leaders, immigrants, successful business partners and inspiring people.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+      <button type="button" onClick="{{playFeatured}}" aria-label="Play the featured episode" style="flex: 2 1 560px; min-width: 0; position: relative; display: block; width: 100%; padding: 0; border: none; border-radius: 24px; overflow: hidden; background: #1C1B19; cursor: pointer">
+        <img src="images/show.svg" alt="" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+        <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center"><span style="width: 92px; height: 92px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span></span>
+        <span style="position: absolute; left: 20px; top: 18px; padding: 6px 12px; border-radius: 999px; background: #E9A23B; color: #111111; font-size: 11px; font-weight: 800; letter-spacing: 0.12em">LATEST · EPISODE [01]</span>
+      </button>
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+        <span class="eyebrow" style="color: #B9B3A8">Episodes</span>
+        <sc-for list="{{episodes}}" as="e" hint-placeholder-count="4">
+          <button type="button" onClick="{{e.play}}" style="display: flex; gap: 14px; align-items: center; padding: 12px; border-radius: 14px; border: 1px solid #2E2C28; background: #1C1B19; text-align: left; font: inherit; color: #FFFFFF; cursor: pointer">
+            <img src="images/show.svg" alt="" style="width: 96px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; flex: none">
+            <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; font-weight: 800; color: #E9A23B">EP {{e.n}}</span><span style="font-weight: 700">{{e.guest}}</span><span style="font-size: 13px; color: #B9B3A8">{{e.topic}}</span></span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<div style="background: #E9A23B; color: #111111">
+  <p class="wrap" style="margin: 0 auto; padding-top: 18px; padding-bottom: 18px; text-align: center; font-weight: 800; font-size: 14px; letter-spacing: 0.16em">MOTIVATION · ENTREPRENEURSHIP · LEADERSHIP · BUSINESS · SOCIAL MEDIA · PERSONAL DEVELOPMENT</p>
+</div>
+
+<!-- LATEST BY PLATFORM -->
+<section style="padding: 96px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: end">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <p class="eyebrow" style="color: #E9A23B">Latest content</p>
+        <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px); color: #FFFFFF">From every channel</h2>
+      </div>
+      <div role="tablist" aria-label="Choose a platform" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <sc-for list="{{platforms}}" as="p" hint-placeholder-count="6">
+          <button type="button" role="tab" onClick="{{p.pick}}" aria-selected="{{p.selected}}" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1.5px solid {{p.border}}; background: {{p.bg}}; color: {{p.fg}}; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer">{{p.label}}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+      <sc-for list="{{posts}}" as="v" hint-placeholder-count="4">
+        <a href="{{v.href}}" class="card-hover" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #FFFFFF">
+          <span style="position: relative; display: block; border-radius: 16px; overflow: hidden">
+            <img src="{{v.img}}" alt="" style="display: block; width: 100%; aspect-ratio: {{v.ratio}}; object-fit: cover">
+            <span style="position: absolute; left: 12px; bottom: 12px; width: 40px; height: 40px; border-radius: 999px; background: #E9A23B; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+          </span>
+          <span style="font-weight: 700">{{v.title}}</span>
+          <span style="font-size: 12px; color: #B9B3A8">{{v.meta}}</span>
+        </a>
+      </sc-for>
+    </div>
+    <a class="btn btn-ghost-d" href="{{follow.href}}" style="align-self: flex-start">{{follow.label}} →</a>
+  </div>
+</section>
+
+<!-- FOLLOW GRID -->
+<section style="background: #1C1B19; padding: 88px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 28px">
+    <h2 class="disp" style="font-size: clamp(40px, 5vw, 64px); color: #FFFFFF">Follow WongEX</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px">
+      <a href="#tiktok" style="display: flex; flex-direction: column; gap: 4px; padding: 20px; border-radius: 16px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">TikTok</span><span style="font-size: 13px; color: #B9B3A8">[@handle]</span></a>
+      <a href="#instagram" style="display: flex; flex-direction: column; gap: 4px; padding: 20px; border-radius: 16px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">Instagram</span><span style="font-size: 13px; color: #B9B3A8">[@handle]</span></a>
+      <a href="#facebook" style="display: flex; flex-direction: column; gap: 4px; padding: 20px; border-radius: 16px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">Facebook</span><span style="font-size: 13px; color: #B9B3A8">[Page name]</span></a>
+      <a href="#youtube" style="display: flex; flex-direction: column; gap: 4px; padding: 20px; border-radius: 16px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">YouTube</span><span style="font-size: 13px; color: #B9B3A8">[Channel]</span></a>
+      <a href="#x" style="display: flex; flex-direction: column; gap: 4px; padding: 20px; border-radius: 16px; border: 1px solid #3A3833; text-decoration: none; color: #FFFFFF"><span style="font-weight: 800">X</span><span style="font-size: 13px; color: #B9B3A8">[@handle]</span></a>
+      <a href="#whatsapp" style="display: flex; flex-direction: column; gap: 4px; padding: 20px; border-radius: 16px; background: #E9A23B; text-decoration: none; color: #111111"><span style="font-weight: 800">WhatsApp Channel</span><span style="font-size: 13px; color: #3A2508">[Channel link]</span></a>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; padding: 28px; border-radius: 20px; border: 1px solid #3A3833">
+      <span style="font-size: 17px; font-weight: 600">Want to be a guest on The Wonge Sherpa Show?</span>
+      <a class="btn btn-gold" href="connect.html">Apply to be a guest →</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background: #0A0A0A; color: #B9B3A8; padding: 40px 0">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; font-size: 13px">
+    <span class="disp" style="font-size: 26px; color: #FFFFFF">WongEX<span style="color: #E9A23B">4U</span></span>
+    <span>© 2026 WongEX · <a href="connect.html" style="color: #B9B3A8">Privacy</a> · <a href="connect.html" style="color: #B9B3A8">Terms</a></span>
+  </div>
+</footer>
+
+<sc-if value="{{videoOpen}}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="Episode player" style="position: fixed; inset: 0; z-index: 50; background: rgba(10, 10, 10, 0.92); display: flex; align-items: center; justify-content: center; padding: 24px">
+    <div style="width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+        <span class="disp" style="font-size: 30px; color: #FFFFFF">{{videoTitle}}</span>
+        <button type="button" onClick="{{closeVideo}}" aria-label="Close video" style="width: 48px; height: 48px; flex: none; border-radius: 999px; border: 1.5px solid #4A4740; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
+      <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #000000">
+        <img src="images/show.svg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0.4">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center">
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.14em; color: #E9A23B">VIDEO SLOT</span>
+          <span style="max-width: 520px; font-size: 18px; font-weight: 600; color: #FFFFFF">Connect the YouTube / podcast link for this episode here.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</template>
+<script>
+/* WongEX page runtime: renders the template, handles state & events (no dependencies) */
+(function(){
+  class DCLogic { constructor(props){ this.props = props || {}; this.state = {}; }
+    setState(p){ Object.assign(this.state, typeof p === 'function' ? p(this.state) : p); if (this._render) this._render(); }
+    forceUpdate(){ if (this._render) this._render(); } }
+  window.DCLogic = DCLogic;
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g, WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+  function look(path, scope){
+    if (path === 'true') return true; if (path === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+    var parts = path.split('.'), v = scope;
+    for (var i = 0; i < parts.length; i++){ if (v == null) return undefined; v = v[parts[i]]; }
+    return v;
+  }
+  var EV = { onclick: 'click', onsubmit: 'submit', onchange: 'change', oninput: 'input' };
+  function renderNodes(node, scope, ns){
+    if (node.nodeType === 3){
+      var t = node.nodeValue;
+      if (t.indexOf('{{') < 0) return [document.createTextNode(t)];
+      return [document.createTextNode(t.replace(HOLE, function(_, p){ var v = look(p, scope); return v == null ? '' : String(v); }))];
+    }
+    if (node.nodeType !== 1) return [];
+    var tag = node.nodeName.toLowerCase();
+    if (tag === 'sc-if'){
+      var m = WHOLE.exec(node.getAttribute('value') || '');
+      if (!(m && look(m[1], scope))) return [];
+      return kids(node, scope, ns);
+    }
+    if (tag === 'sc-for'){
+      var lm = WHOLE.exec(node.getAttribute('list') || ''); var list = lm ? look(lm[1], scope) : [];
+      var as = node.getAttribute('as') || 'item', out = [];
+      (list || []).forEach(function(it, i){ var s = Object.create(scope); s[as] = it; s.$index = i; out.push.apply(out, kids(node, s, ns)); });
+      return out;
+    }
+    var SVG = 'http://www.w3.org/2000/svg'; if (tag === 'svg') ns = SVG;
+    var el = ns ? document.createElementNS(ns, node.nodeName) : document.createElement(tag); el._dcH = {};
+    for (var a = 0; a < node.attributes.length; a++){
+      var at = node.attributes[a], name = at.name, val = at.value, lname = name.toLowerCase();
+      if (lname.indexOf('hint-') === 0) continue;
+      var w = WHOLE.exec(val);
+      if (EV[lname]){ if (w){ var fn = look(w[1], scope); if (typeof fn === 'function') el._dcH[EV[lname]] = fn; } continue; }
+      if (w){
+        var v = look(w[1], scope);
+        if (lname === 'checked'){ el._dcChecked = !!v; if (v) el.setAttribute('checked', ''); continue; }
+        if (v === false || v == null) continue;
+        el.setAttribute(name, v === true ? '' : String(v)); continue;
+      }
+      if (val.indexOf('{{') >= 0) val = val.replace(HOLE, function(_, p){ var x = look(p, scope); return x == null ? '' : String(x); });
+      el.setAttribute(name, val);
+    }
+    kids(node, scope, ns).forEach(function(c){ el.appendChild(c); });
+    return [el];
+  }
+  function kids(node, scope, ns){ var out = []; var src = node.content || node; for (var c = src.firstChild; c; c = c.nextSibling) out.push.apply(out, renderNodes(c, scope, ns)); return out; }
+  function morph(from, to){
+    if (from.nodeType !== to.nodeType || from.nodeName !== to.nodeName){ from.parentNode.replaceChild(to, from); return; }
+    if (from.nodeType === 3){ if (from.nodeValue !== to.nodeValue) from.nodeValue = to.nodeValue; return; }
+    var i;
+    for (i = from.attributes.length - 1; i >= 0; i--){ var n = from.attributes[i].name; if (!to.hasAttribute(n)) from.removeAttribute(n); }
+    for (i = 0; i < to.attributes.length; i++){ var at = to.attributes[i]; if (from.getAttribute(at.name) !== at.value) from.setAttribute(at.name, at.value); }
+    from._dcH = to._dcH;
+    if (to._dcChecked !== undefined){ from.checked = to._dcChecked; }
+    patchChildren(from, Array.prototype.slice.call(to.childNodes));
+  }
+  function patchChildren(parent, next){
+    var cur = Array.prototype.slice.call(parent.childNodes), i;
+    for (i = 0; i < next.length; i++){ if (i < cur.length) morph(cur[i], next[i]); else parent.appendChild(next[i]); }
+    for (i = next.length; i < cur.length; i++) parent.removeChild(cur[i]);
+  }
+  window.mountDC = function(root, tpl, Component){
+    var comp = new Component({});
+    comp._render = function(){ var vals = comp.renderVals ? comp.renderVals() : {}; patchChildren(root, kids(tpl, vals)); };
+    ['click', 'submit', 'change', 'input'].forEach(function(type){
+      root.addEventListener(type, function(e){
+        for (var el = e.target; el && el !== root.parentNode; el = el.parentNode){ if (el._dcH && el._dcH[type]){ el._dcH[type](e); break; } }
+      });
+    });
+    comp._render();
+    if (comp.componentDidMount) comp.componentDidMount();
+  };
+})();
+
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { plat: 'YouTube', ep: null }; }
+  renderVals() {
+    const s = this.state;
+    const eps = [
+      { n: '01', guest: '[Guest name]', topic: '[Entrepreneurship]' },
+      { n: '02', guest: '[Guest name]', topic: '[Leadership]' },
+      { n: '03', guest: '[Guest name]', topic: '[Immigrant journey]' },
+      { n: '04', guest: '[Guest name]', topic: '[Building a team]' }
+    ];
+    const episodes = eps.map((e, k) => ({ ...e, play: () => this.setState({ ep: k }) }));
+    const imgs = ['images/lesson-social.svg', 'images/lesson-brand.svg', 'images/lesson-sales.svg', 'images/mission.svg'];
+    const vertical = { TikTok: true, Instagram: true };
+    const pl = ['YouTube', 'TikTok', 'Instagram', 'Facebook', 'X', 'WhatsApp'];
+    const platforms = pl.map((p) => ({ label: p, selected: s.plat === p ? 'true' : 'false', bg: s.plat === p ? '#E9A23B' : 'transparent', fg: s.plat === p ? '#111111' : '#FFFFFF', border: s.plat === p ? '#E9A23B' : '#4A4740', pick: () => this.setState({ plat: p }) }));
+    const posts = imgs.map((img, k) => ({ img, title: '[Latest ' + s.plat + ' post ' + (k + 1) + ']', meta: s.plat + ' · [date]', ratio: vertical[s.plat] ? '9 / 14' : '16 / 9', href: '#' + s.plat.toLowerCase() }));
+    const ep = s.ep !== null ? eps[s.ep] : null;
+    return {
+      episodes, platforms, posts,
+      follow: { label: 'See more on ' + s.plat, href: '#' + s.plat.toLowerCase() },
+      playFeatured: () => this.setState({ ep: 0 }),
+      videoOpen: ep !== null,
+      videoTitle: ep ? 'Episode ' + ep.n + ' · ' + ep.guest : '',
+      closeVideo: () => this.setState({ ep: null })
+    };
+  }
+}
+mountDC(document.getElementById('app'), document.getElementById('page'), Component);
+</script>
+</body>
+</html>
